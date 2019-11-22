@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:enabled="true"
+        android:menuCategory="secondary"
+        android:visible="true">
+        <item
+
+            android:title="Import"
+            android:checkable="false"
+            android:showAsAction="always|collapseActionView"
+            android:menuCategory="secondary">
+
+            <item
+                android:title="Collect">
+                <menu>
+                    <item android:id="@+id/nav_form1"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="Lesson Observation">
+
+                    </item>
+                    <item android:id="@+id/nav_form2"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="Reading Camp Observation">
+
+                    </item>
+                    <item android:id="@+id/nav_form3"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="School Director Interview">
+
+                    </item>
+                    <item android:id="@+id/nav_form4"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="Clasroom Observation">
+
+                    </item>
+                    <item android:id="@+id/nav_form5"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="School Observation 1">
+
+                    </item>
+                    <item android:id="@+id/nav_form6"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="School Observation 2">
+
+                    </item>
+                    <item android:id="@+id/nav_form7"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="Teacher Interview">
+
+                    </item>
+                </menu>
+            </item>
+            <item
+                android:title="Analytics">
+                <menu>
+                    <item
+                        android:id="@+id/nav_report1"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="Literacy Boost Camp">
+                    </item>
+                    <item
+                        android:id="@+id/nav_report2"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="Literacy Boost Lesson">
+                    </item>
+                    <item
+                        android:id="@+id/nav_report3"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="REACH Management">
+                    </item>
+                    <item
+                        android:id="@+id/nav_report4"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="REACH Literacy">
+                    </item>
+                    <item
+                        android:id="@+id/nav_report5"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="REACH WASH">
+                    </item>
+                    <item
+                        android:id="@+id/nav_report6"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="REACH Nutrition">
+                    </item>
+                    <item
+                        android:id="@+id/nav_report7"
+                        android:icon="@drawable/ic_launcher"
+                        android:title="REACH Health">
+                    </item>
+                </menu>
+            </item>
+
+
+
+
+        </item>
+
+
+    </group>
+
+
+
+</menu>

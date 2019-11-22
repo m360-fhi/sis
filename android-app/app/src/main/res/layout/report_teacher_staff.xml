@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/save_line"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_groupIndicator"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:text=" Report Teacher / Staff"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_weight=".95" />
+
+            <LinearLayout
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingBottom="1.8dp"
+                android:background="@drawable/save_line">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/sync_report"
+                    app:backgroundTint="#a0a0a0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--************* PART 1 ************-->
+
+        <!--************* PART 2 ************-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fl_part1"
+            android:layout_weight=".345"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_date">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Select Teacher or Staff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp" >
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+                        android:text="Class Teacher"
+                        android:textSize="24dp"
+                        android:textColor="#000000"
+                        android:focusable="false"
+                        android:checked="false"
+                        android:id="@+id/_col1a"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="Subject Teacher"
+                        android:textSize="24dp"
+                        android:textColor="#000000"
+                        android:focusable="false"
+                        android:checked="false"
+                        android:id="@+id/_col1b"
+                        android:layout_marginBottom="5dp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:text="Staff"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:id="@+id/_col1c"
+                        android:checked="false"
+                        android:layout_marginBottom="5dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#72a0b5"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_Teacher">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Shift and Level"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#d1d0d0" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Morning"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="25dp"
+                            android:id="@+id/textView94"
+                            android:layout_weight=".32"
+                            android:layout_marginLeft="50dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Afternoon"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="25dp"
+                            android:id="@+id/textView95"
+                            android:layout_weight=".32" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Evening"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="25dp"
+                            android:id="@+id/textView96"
+                            android:layout_weight=".32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1" >
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="vertical"
+                            android:layout_weight=".33"
+                            android:layout_marginLeft="50dp">
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Preprimary"
+                                android:textSize="24dp"
+                                android:textColor="#000000"
+                                android:focusable="false"
+                                android:checked="false"
+                                android:id="@+id/_col2a" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Primary"
+                                android:textColor="#000000"
+                                android:textSize="24dp"
+                                android:id="@+id/_col2b"
+                                android:checked="false" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Secondary"
+                                android:textColor="#000000"
+                                android:textSize="24dp"
+                                android:id="@+id/_col2c"
+                                android:checked="false" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="vertical"
+                            android:layout_weight=".33">
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Preprimary"
+                                android:textSize="24dp"
+                                android:textColor="#000000"
+                                android:focusable="false"
+                                android:checked="false"
+                                android:id="@+id/_col2d" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Primary"
+                                android:textColor="#000000"
+                                android:textSize="24dp"
+                                android:id="@+id/_col2e"
+                                android:checked="false" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Secondary"
+                                android:textColor="#000000"
+                                android:textSize="24dp"
+                                android:id="@+id/_col2f"
+                                android:checked="false" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="vertical"
+                            android:layout_weight=".33">
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Primary"
+                                android:textColor="#000000"
+                                android:textSize="24dp"
+                                android:id="@+id/_col2g"
+                                android:checked="false" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="40dip"
+                                android:layout_weight=".5"
+                                android:text="Secondary"
+                                android:textColor="#000000"
+                                android:textSize="24dp"
+                                android:id="@+id/_col2h"
+                                android:checked="false" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_Staff" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Academic Qualification"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#d1d0d0" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="78dp"
+                        android:paddingTop="12dp" >
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:layout_weight=".5"
+                            android:text="Did not complete secondary school"
+                            android:textSize="24dp"
+                            android:textColor="#000000"
+                            android:focusable="false"
+                            android:checked="false"
+                            android:id="@+id/_col3a" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:layout_weight=".5"
+                            android:text="Completed secondary school"
+                            android:textColor="#000000"
+                            android:textSize="24dp"
+                            android:id="@+id/_col3b"
+                            android:checked="false" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:layout_weight=".5"
+                            android:text="Any Bachelor&apos;s degree"
+                            android:textColor="#000000"
+                            android:textSize="24dp"
+                            android:id="@+id/_col3c"
+                            android:checked="false" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:layout_weight=".5"
+                            android:text="Any Masters&apos; degree or above"
+                            android:textColor="#000000"
+                            android:textSize="24dp"
+                            android:id="@+id/_col3d"
+                            android:checked="false" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#72a0b5"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <ExpandableListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lvExp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/fl_part2"
+            android:layout_weight=".345">
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

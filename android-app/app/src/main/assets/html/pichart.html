@@ -1,0 +1,621 @@
+<!doctype html>
+<head>
+    <script src="./js/anychart-base.min.js" type="text/javascript"></script>
+    <script src="./js/anychart-ui.min.js"></script>
+    <script src="./js/anychart-exports.min.js"></script>
+    <script src="./js/anychart-bundle.min.js"></script>
+    <script src="./js/anychart-linear-gauge.min.js"></script>
+    <script src="./js/anychart-circular-gauge.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/anychart-ui.min.css" />
+    <link rel="stylesheet" href="./fonts/css/anychart-font.min.css" />
+        <script>
+        var credits;
+        var legend;
+        var legendTitle;
+        var preloader;
+
+        function loadPieChart(values, widthD, heightD, titleGraph, titleX, titleY, key) {
+            $("#container").show();
+            $("#container").width(widthD);
+            $("#container").height(heightD);
+            $("#title").hide();
+
+
+            anychart.licenseKey(key)
+
+            // create a data set
+            var data = anychart.data.set(values);
+
+            // create a chart and set the data
+            var chart = anychart.pie(data);
+
+            // set the chart title
+            var title = chart.title();
+            title.enabled(true);
+            // title text
+            title.text(titleGraph);
+            // set font size
+            title.fontSize(20.);
+            title.useHtml(true);
+            title.fontDecoration("bold");
+  			title.fontColor('grey');
+  			title.hAlign('center');
+
+            // set the container id
+            chart.container("container");
+            chart.labels().position("outside");
+            //chart.labels().fontSize(18);
+            chart.legend().fontSize(14);
+
+            var legend = chart.legend();
+            legend.height(400);
+            legend.width(200);
+            legend.position("right");
+            legend.itemsLayout("horizontal-expandable");
+
+            // initiate drawing the chart
+            chart.draw();
+
+        }
+
+        function loadBarChart(values, widthD, heightD, titleGraph, titleX, titleY, key) {
+            $("#container").show();
+            $("#container").width(widthD);
+            $("#container").height(heightD);
+            $("#title").hide();
+
+            preloader = anychart.ui.preloader();
+            preloader.render();
+            preloader.visible(true);
+            anychart.licenseKey(key)
+         // create a data set
+            var data = anychart.data.set(values);
+
+            // create a chart
+            var chart = anychart.bar();
+
+            // create a bar series and set the data
+            var series = chart.bar(data);
+            series.labels(true);
+
+            // set the chart title
+            var title = chart.title();
+  		    title.enabled(true);
+            // title text
+            title.text(titleGraph);
+            // set font size
+            title.fontSize(20.);
+            title.useHtml(true);
+            title.fontDecoration("bold");
+  			title.fontColor('grey');
+  			title.hAlign('center');
+
+            // set the titles of the axes
+            chart.xAxis().title(titleX);
+            chart.yAxis().title(titleY);
+
+            // set the container id
+            chart.container("container");
+            //chart.legend().fontSize(25);
+
+            // initiate drawing the chart
+            chart.draw();
+            preloader.visible(false);
+        }
+
+        function loadLineChartYScale(values, widthD, heightD, titleString, xtitle, ytitle, key) {
+            $("#container").show();
+            $("#container").width(widthD);
+            $("#container").height(heightD);
+            $("#title").hide();
+
+
+            preloader = anychart.ui.preloader();
+            preloader.render();
+            preloader.visible(true);
+            anychart.licenseKey(key);
+
+            // create a chart
+            var chart = anychart.line();
+
+            // create a line series and set the data
+            var series = chart.line(values);
+
+            // set scale for the chart, this scale will be used in all scale dependent entries such axes, grids, etc
+            chart.yScale().ticks().set([10,20,30,40,50,60,70,80,90,100]);
+            // set the chart title
+            var title = chart.title();
+            title.enabled(true);
+            // title text
+            title.text(titleString);
+            // set font size
+            title.fontSize(20);
+            title.useHtml(true);
+            title.fontDecoration("bold");
+
+           // configure the visual settings of the first series
+            series.normal().stroke("#FF6666", 4);
+            series.hovered().stroke("#0066cc", 2);
+            series.selected().stroke("#0066cc", 4);
+            series.markers(true);
+            series.labels(true);
+
+            // set the titles of the axes
+            var xAxis = chart.xAxis();
+            xAxis.title(xtitle);
+            xAxis.title().fontSize(14);
+            var yAxis = chart.yAxis();
+            yAxis.title(ytitle);
+            yAxis.title().fontSize(14);
+
+
+            // set the labels of the axes
+  			var labels = chart.xAxis().labels();
+            labels.fontFamily("Courier");
+            labels.fontSize(13);
+            //labels.fontColor("#125393");
+            //labels.fontWeight("bold");
+            labels.useHtml(false);
+
+            // set the container id
+            chart.container("container");
+            //chart.legend().fontSize(18);
+
+            // initiate drawing the chart
+            chart.draw();
+            preloader.visible(false);
+        }
+
+
+        function loadLineChart(values, widthD, heightD, titleString, xtitle, ytitle, key) {
+            $("#container").show();
+            $("#container").width(widthD);
+            $("#container").height(heightD);
+            $("#title").hide();
+
+
+            preloader = anychart.ui.preloader();
+            preloader.render();
+            preloader.visible(true);
+            anychart.licenseKey(key);
+
+            // create a chart
+            var chart = anychart.line();
+
+            // create a line series and set the data
+            var series = chart.line(values);
+
+            // create logarithmic scale
+            var logScale = anychart.scales.log();
+            logScale.minimum(0).ticks({
+                    interval: 2});
+                    //.maximum(10);
+
+            // set scale for the chart, this scale will be used in all scale dependent entries such axes, grids, etc
+            //chart.yScale(logScale);
+            chart.yScale(anychart.scales.linear());
+            // set the chart title
+            var title = chart.title();
+            title.enabled(true);
+            // title text
+            title.text(titleString);
+            // set font size
+            title.fontSize(20);
+            title.useHtml(true);
+            title.fontDecoration("bold");
+
+           // configure the visual settings of the first series
+            series.normal().stroke("#FF6666", 4);
+            series.hovered().stroke("#0066cc", 2);
+            series.selected().stroke("#0066cc", 4);
+            series.markers(true);
+            series.labels(true);
+
+            // set the titles of the axes
+            var xAxis = chart.xAxis();
+            xAxis.title(xtitle);
+            xAxis.title().fontSize(14);
+            var yAxis = chart.yAxis();
+            yAxis.title(ytitle);
+            yAxis.title().fontSize(14);
+
+
+            // set the labels of the axes
+  			var labels = chart.xAxis().labels();
+            labels.fontFamily("Courier");
+            labels.fontSize(13);
+            //labels.fontColor("#125393");
+            //labels.fontWeight("bold");
+            labels.useHtml(false);
+
+            // set the container id
+            chart.container("container");
+            //chart.legend().fontSize(18);
+
+            // initiate drawing the chart
+            chart.draw();
+            preloader.visible(false);
+        }
+
+        function loadGrayGaugeChart(value, textValue, widthD, heightD, title, key) {
+                anychart.licenseKey(key);
+
+                $("#container").show();
+                $("#container").width(widthD);
+                $("#container").height(heightD);
+
+                preloader = anychart.ui.preloader();
+                preloader.render(document.getElementById("container"));
+                preloader.visible(true);
+
+                	// create data set on our data
+                var dataSet = anychart.data.set([value]);
+
+                    // set the gauge type
+                var gauge = anychart.gauges.circular();
+
+                    // gauge settings
+                gauge.data(dataSet);
+                gauge.padding("20%");
+                gauge.startAngle(-150);
+                gauge.sweepAngle(300);
+                gauge.fill(["white", "white"], .5, .5, null, 1, 0.5, 0.9);
+
+                    // axis settings
+                var axis = gauge.axis()
+            .radius(95)
+            .width(0);
+
+                    // scale settings
+                axis.scale()
+            .minimum(0)
+            .maximum(5)
+            .ticks({interval: 1})
+            .minorTicks({interval: 0.5});
+
+                    // ticks settings
+                axis.ticks()
+            .type("trapezium")
+            .fill("white")
+            .length(9);
+
+                    // minor ticks settings
+                axis.minorTicks()
+            .enabled(true)
+            .fill("grey")
+            .length(1.0);
+
+            // labels settings
+                axis.labels()
+            .fontSize("14px")
+            .fontColor("grey");
+
+            gauge.title(title);
+                            gauge.title()
+                            .useHtml(true)
+                            .padding(0)
+                            .fontSize(20)
+                            .fontColor('#212121')
+                            .hAlign('center')
+                            .enabled(true)
+                            .margin([0, 0, 30, 0]);
+
+            // needle
+                gauge.needle(0)
+            .enabled(true)
+            .startRadius("-5%")
+            .endRadius("80%")
+            .middleRadius(0)
+            .startWidth("2%")
+            .endWidth("0.4%")
+            .middleWidth("2%")
+            .fill("grey");
+
+            // marker
+                gauge.marker(0)
+            .axisIndex(1)
+            .dataIndex(1)
+            .size(7)
+            .type("triangle-down")
+            .position("inside")
+            .radius(55);
+
+                // bar
+                gauge.bar(0)
+            .axisIndex(1)
+            .position("inside")
+            .dataIndex(1)
+            .width(3)
+            .radius(60)
+            .zIndex(10);
+
+            // gap
+            gauge.cap()
+            .radius("1%");
+
+            // gauge label
+            gauge.label()
+            .text(textValue)
+            .anchor("center") // set the position of the label
+            .adjustFontSize(true)
+            .hAlign("center")
+            .offsetY("-100%")
+            .offsetX("50%")
+            .width("50%")
+            .height("20%")
+            .zIndex(10);
+
+
+             // range
+            gauge.range({
+                  from: 0,
+                  to: 5,
+                  fill: {keys: ["#09ea58", "#09ea58","#09ea58","#09ea58","#ede907","#ede907", "#ede907","#ede907","#ed0707","#ed0707", "#ed0707" ]},
+                  position: "outside",
+                  radius: 100,
+                  endSize: "30%",
+                  startSize:"30%",
+                  zIndex: 10
+              });
+
+                // draw the chart
+            gauge.container("container").draw();
+            preloader.visible(false);
+    }
+
+    function loadGaugeChart(value, widthD, heightD, title, key) {
+            // create data set on our data
+            anychart.licenseKey(key);
+
+            $("#container").show();
+            $("#container").width(widthD);
+            $("#container").height(heightD);
+
+            preloader = anychart.ui.preloader();
+            preloader.render(document.getElementById("container"));
+            preloader.visible(true);
+            var dataSet = anychart.data.set([value]);
+
+            // set the gauge type
+            var gauge = anychart.gauges.circular();
+
+            // gauge settings
+            gauge.data(dataSet);
+            gauge.padding("10%");
+            gauge.startAngle(225);
+            gauge.sweepAngle(270);
+            gauge.fill(["white", "white"], .5, .5, null, 1, 0.5, 0.9);
+
+            gauge.title(title);
+            gauge.title()
+            .useHtml(true)
+            .padding(0)
+            .fontSize(20)
+            .fontColor('#212121')
+            .hAlign('center')
+            .margin([0, 0, 10, 0]);
+
+
+
+            // axis settings
+            var axis = gauge.axis()
+                .radius(95)
+                .width(6);
+
+            // scale settings
+            axis.scale()
+
+            .minimum(0)
+                .maximum(100)
+                .ticks({
+                    interval: 10
+                })
+                .minorTicks({
+                    interval: 1
+                });
+
+            // ticks settings
+            axis.ticks()
+                .type("trapezium")
+                .fill("grey")
+                .length(5);
+
+            // minor ticks settings
+            axis.minorTicks()
+                .enabled(true)
+                .fill("grey")
+                .length(1.5);
+
+            // labels settings
+            axis.labels()
+                .fontSize("15px")
+                .fontColor("grey");
+
+            // needle
+            gauge.needle(0)
+                .enabled(true)
+                .startRadius("-5%")
+                .endRadius("60%")
+                .middleRadius(0)
+                .startWidth("0.1%")
+                .endWidth("0.1%")
+                .middleWidth("5%");
+
+            // marker
+            gauge.marker(0)
+                .axisIndex(1)
+                .dataIndex(1)
+                .size(9)
+                .type("triangle-down")
+                .position("outside")
+                .radius(55);
+
+            // bar
+            gauge.bar(0)
+                .axisIndex(1)
+                .position("inside")
+                .dataIndex(1)
+                .width(9)
+                .radius(60)
+                .zIndex(10);
+
+            // gap
+            gauge.cap()
+                .radius("1%");
+
+            // gauge label
+             gauge.label()
+                .text(value + "")
+                .anchor("center") // set the position of the label
+                .adjustFontSize(true)
+                .hAlign("center")
+                .offsetY("-70%")
+                .offsetX("50%")
+                .width("50%")
+                .height("20%")
+                .fontColor("#0000FF")
+                .zIndex(10);
+
+
+            // range
+            gauge.range({
+                from: 0,
+                to: 100,
+                fill: {
+                    keys: ["green", "yellow", "red"]
+                },
+                position: "outside",
+                radius: 100,
+                endSize: "16%",
+                startSize: "16%",
+                zIndex: 10
+            });
+
+            // draw the chart
+            gauge.container("container").draw();
+            preloader.visible(false);
+        }
+
+    function loadLinearGaugeChart(value,textValue, widthD, heightD, titleData, key) {
+
+        anychart.licenseKey(key);
+
+        $("#container").show();
+        $("#container").width(widthD);
+        $("#container").height(widthD / 4);
+       // create data
+           var data = [value];
+
+           // set the gauge type
+           var gauge = anychart.gauges.linear();
+           var title =gauge.title();
+
+         title.useHtml(true);
+          title.enabled(true);
+            title.text(titleData);
+          title
+            .useHtml(true)
+            .padding(0)
+            .fontSize(20)
+            .fontColor('#212121')
+            .hAlign('center')
+            .margin([0, 0, 10, 0]);
+
+           // set the data for the gauge
+           gauge.data(data);
+
+           // set the layout
+           gauge.layout('horizontal');
+
+
+           // create a color scale
+           var scaleBarColorScale = anychart.scales.ordinalColor().ranges(
+           [
+               {
+                   from: 0,
+                   to: 15,
+                   color: ['#FFCC66', '#FFCC66']
+               },
+               {
+                   from: 15,
+                   to: 45,
+                   color: ['#50C878', '#50C878']
+               },
+               {
+                   from: 45,
+                   to: 100,
+                   color: ['#FF6961', '#FF6961']
+               }
+           ]
+           );
+
+           gauge.label()
+          .text(textValue)
+          .anchor("center") // set the position of the label
+          .adjustFontSize(true)
+          .hAlign("center")
+          .offsetY("92%")
+          .offsetX("50%")
+          .width("100%")
+          .height("20%")
+          .zIndex(10);
+           // create a Scale Bar
+           var scaleBar = gauge.scaleBar(0);
+
+           // set the height and offset of the Scale Bar (both as percentages of the gauge height)
+           scaleBar.width('20%');
+           scaleBar.offset('31.5%');
+
+           // use the color scale (defined earlier) as the color scale of the Scale Bar
+           scaleBar.colorScale(scaleBarColorScale);
+
+           // add a marker pointer
+           var marker = gauge.marker(0);
+
+
+           // set the offset of the pointer as a percentage of the gauge width
+           marker.offset('33%');
+           marker.width('20%');
+
+           // set the marker type
+           marker.type('triangle-up');
+          marker.color('#57534b');
+
+           // set the zIndex of the marker
+           marker.zIndex(10);
+
+           // configure the scale
+           var scale = gauge.scale();
+           scale.minimum(0);
+           scale.maximum(100);
+           scale.ticks().interval(10);
+           scale.minorTicks().interval(2);
+
+           // configure the axis
+           var axis = gauge.axis();
+           axis.minorTicks(true)
+           axis.minorTicks().stroke('#cecece');
+           axis.width('1%');
+           axis.offset('29.5%');
+           axis.orientation('top');
+
+           // format axis labels
+           axis.labels().format('{%value}');
+
+           // set paddings
+           gauge.padding([0, 50]);
+
+           // set the container id
+           gauge.container('container');
+
+           // initiate drawing the gauge
+           gauge.draw();
+    }
+    </script>
+</head>
+<body>
+    <div id="container" style="width: 0px; height: 0px;visibility='hidden';padding: 0 0 0 0;" align="center"></div>
+</body>
+</html>
+

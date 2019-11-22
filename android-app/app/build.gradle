@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.example.sergio.sistz"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 54
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    buildTypes.each{
+        it.buildConfigField 'String', 'AnyChartAPIKey', '"<anyChart key>"'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("external/debug.keystore")
+            storePassword "Abc12345"
+            keyAlias "alias_name"
+            keyPassword "Abc12345"
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:design:26.+'
+    //  implementation 'com.google.android.gms:play-services-appindexing:9.8.0'
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'com.google.android.gms:play-services:8.4.0'
+    implementation 'ch.acra:acra:4.9.0'
+    implementation 'com.github.clans:fab:1.6.2'
+    //ButterKinfe
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    /** Graphs **/
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.txusballesteros:FitChart:1.0'
+    /** Multidex **/
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.github.vihtarb:tooltip:0.1.9'
+    /** LoadingView */
+    implementation 'org.buraktamturk:loadingview:1.0.0@aar'
+    /** AutoFormat*/
+    implementation 'com.aldoapps:autoformatedittext:0.9.3'
+    /** CurrencyEditText*/
+    implementation 'com.github.BlacKCaT27:CurrencyEditText:2.0.2'
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.0.9'
+}

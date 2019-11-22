@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout style="@style/foms_bar" >
+            <LinearLayout style="@style/layout_foms_text" android:gravity="center_horizontal">
+                <TextView
+                    style="@style/title_forms"
+                    android:id="@+id/tv_groupIndicator"
+                    android:text="@string/str_g_teacherandstaff" />
+                <TextView
+                    style="@style/leyend_forms"
+                    android:layout_width="match_parent"
+                    android:text="@string/str_legend_teacher2"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--************* PART 1 ************-->
+        <TextView
+            android:id="@+id/txt_no_data_to_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/table_report_no_data_to_show"
+            android:textAlignment="center"
+            android:textSize="@dimen/fontSelect"
+            android:visibility="gone" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/fl_part1"
+            android:layout_weight=".460"
+            android:transitionGroup="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".345"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="25dp">
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_list" />
+
+                <!-- 1. EMIS CODE-->
+
+                <!-- 2. NAME-->
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!--************* PART 2 ************-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:paddingBottom="7dp"
+            android:background="@drawable/save_line2">
+
+            <CheckBox
+                android:id="@+id/cb_drop_out"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3.5"
+                android:buttonTint="@android:color/white"
+                android:paddingLeft="10dp"
+                android:text="@string/str_teacher_drop_out"
+                android:textColor="#F2F2F2"
+                android:textSize="18dp" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_gravity="bottom"
+                android:textSize="30dp"
+                android:visibility="gone"
+                android:id="@+id/et_find_reg"
+                android:background="#a0a0a0"
+                android:textIsSelectable="false" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_find_reg"
+                android:src="@drawable/ic_media_play"
+                android:layout_gravity="bottom"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/find_reg"
+                android:layout_width="@dimen/fab_margin2"
+                android:layout_height="@dimen/fab_margin2"
+                android:layout_gravity="bottom|end"
+
+                android:src="@drawable/find"
+                app:backgroundTint="#a0a0a0" />
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".2"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_reg"
+                android:layout_width="@dimen/fab_margin2"
+                android:layout_height="@dimen/fab_margin2"
+                android:layout_gravity="bottom|end"
+
+                android:src="@drawable/add"
+                app:backgroundTint="#a0a0a0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

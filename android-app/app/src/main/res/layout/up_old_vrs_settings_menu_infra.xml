@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/collect360">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/bandera"
+            android:layout_gravity="right"
+            android:paddingTop="4dp" />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1.22"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tv_groupIndicator"
+            android:textColor="#ff080808"
+            android:textSize="35dp"
+            android:layout_weight="1.15" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp">
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_infra" />
+        </LinearLayout>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1.2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.14"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight=".2" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_back"
+                android:background="@drawable/back_btn"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

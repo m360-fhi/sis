@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout style="@style/foms_bar">
+
+            <LinearLayout style="@style/layout_foms_text">
+
+            <TextView
+                style="@style/title_forms"
+                android:id="@+id/tv_groupIndicator"
+                android:text="@string/str_sa_k" />
+
+            <TextView
+                style="@style/leyend_forms"
+                android:text="" />
+        </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="218dp"
+            android:layout_height="match_parent"
+                android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:paddingBottom="7dp">
+
+                <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/add_reg"
+                    android:layout_width="@dimen/fab_margin2"
+                    android:layout_height="@dimen/fab_margin2"
+                    android:layout_gravity="bottom|end"
+
+                    android:src="@drawable/add"
+                    app:backgroundTint="#a0a0a0"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/erase_reg"
+                    android:layout_width="@dimen/fab_margin2"
+                    android:layout_height="@dimen/fab_margin2"
+
+
+                    android:layout_gravity="bottom|end"
+
+                    android:src="@drawable/trash"
+                    app:backgroundTint="#a0a0a0"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/save_reg"
+                    android:layout_width="@dimen/fab_margin2"
+                    android:layout_height="@dimen/fab_margin2"
+
+
+                    android:layout_gravity="bottom|end"
+
+                    android:src="@drawable/save2"
+                    app:backgroundTint="#a0a0a0"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--************* PART 1 ************-->
+
+        <!--************* PART 2 ************-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/fl_part2"
+            android:layout_weight=".355">
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".345"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_sa_l"
+                        android:id="@+id/tv_hint1"
+                        android:textSize="24dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="40dp" />
+
+
+                    <!-- 2. NAME-->
+
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="45px" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:weightSum="1"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="1dp" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/str_g_date"
+                            android:layout_weight=".25"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/str_g_subject"
+                            android:layout_weight=".4"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/str_sa_m"
+                            android:layout_weight=".35"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp"
+                            android:id="@+id/textView93" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight=".25"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:textSize="16dp"
+                        android:background="#858585"
+                        android:id="@+id/textView91" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lv_absentList" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/report_list_size"
+    android:gravity="center_vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".2"
+        android:text="tv_code"
+        android:textColor="#4B4B4B"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:text="tv_student"
+        android:textColor="#4B4B4B"
+        android:textIsSelectable="false"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt3"
+        android:layout_weight=".2"
+        android:text="points"
+        android:visibility="gone"
+        android:textColor="#4B4B4B"
+        android:textIsSelectable="false"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_absence"
+        android:checked="true"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical" />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_reason"
+        android:entries="@array/reason_absence"
+        android:layout_weight=".3"
+        android:background="@drawable/util_spinner"
+        android:visibility="visible" />
+
+</LinearLayout>

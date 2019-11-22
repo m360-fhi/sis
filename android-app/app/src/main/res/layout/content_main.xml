@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sergio.sistz.main_v3"
+    android:background="@drawable/tapa_start"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/ll_select_school"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|right"
+            android:layout_weight=".71">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="@string/version_text"
+                android:textColor="@color/tzColorWhite" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_alerts_and_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCFFFFFF"
+            android:gravity="left"
+            android:padding="10dp"
+            android:paddingTop="45dp"
+            android:text="@string/str_alerts_and_notifications"
+            android:textColor="#E71A0E"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".20"
+            android:paddingBottom="15dp"
+            android:background="@drawable/degrade_alerts_layout">
+
+            <ListView
+                android:id="@+id/lv_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tzColorGreyDark"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_daily_clasroom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="@string/str_m_tv2"
+                android:textColor="@color/tzColorWhite"
+                android:textSize="28dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

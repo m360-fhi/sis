@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="tv_date"
+        android:id="@+id/txt1"
+        android:layout_weight=".25"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#4B4B4B" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="tv_subject"
+        android:id="@+id/txt2"
+        android:layout_weight=".5"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#4B4B4B"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="tv_reason"
+        android:id="@+id/txt3"
+        android:layout_weight=".25"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#4B4B4B"
+        android:textIsSelectable="false" />
+
+</LinearLayout>

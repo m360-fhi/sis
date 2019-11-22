@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_format">###,##0.00</string>
+    <string name="default_decimal_separator">.</string>
+    <string name="app_name">SIS TZ 2.1.2</string>
+    <string name="version_text">Version: 2.1.2 Release: 054</string>
+    <string name="action_settings1">@string/str_s_tv1</string>
+    <string name="action_settings2">@string/str_s_tv2</string>
+    <string name="action_settings4">@string/str_s_tv3</string>
+    <string name="action_settings5">@string/str_s_tv7</string>
+    <string name="action_settings6">@string/str_s_tv4</string>
+    <string name="action_settings7">Backup web</string>
+    <string name="action_settings3">Restore web</string>
+    <string name="action_settings8">@string/str_s_tv5</string>
+    <string name="action_settings9">@string/str_s_tv6</string>
+    <string name="action_settings10">@string/str_s_tv10</string>
+
+    <string name="SIS">School Information System 2.1.2</string>
+    <string name="pp">Pre-Primary</string>
+    <string name="p">Primary</string>
+    <string name="s">Secondary</string>
+    <string name="synchronizing">The School Information System has been updated to include new regions, districts, and/or wards. The geographic database is being updated now on your tablet. This may take up to 30 seconds and the screen may go blank. Press OK to continue.</string>
+
+    <string name="str_g_sick">Sick</string>
+    <string name="str_g_excused">Excused</string>
+    <string name="str_g_unexcused">Unexcused</string>
+    <string name="str_g_total_absence">Total absence</string>
+    <string name="str_g_class_disruption">Class Disruption</string>
+    <string name="str_g_detention">Detention</string>
+    <string name="str_g_in_school_suspension">In School Suspension</string>
+    <string name="str_g_out_of_school_suspension">Out of School Suspension</string>
+
+    <string-array name="reason_absence">
+        <item>@string/str_g_selectone</item>
+        <item>@string/str_g_sick</item>
+        <item>@string/str_g_excused</item>
+        <item>@string/str_g_unexcused</item>
+        <!--<item>@string/str_g_total_absence</item>-->
+    </string-array>
+
+    <string-array name="behaviour">
+        <item>@string/str_g_selectone</item>
+        <!--<item>@string/str_g_class_disruption</item>-->
+        <item>@string/str_g_warning</item>
+        <item>@string/str_g_detention</item>
+        <item>@string/str_g_in_school_suspension</item>
+        <item>@string/str_g_out_of_school_suspension</item>
+        <!--<item>Participates in class</item>-->
+        <!--<item>Helps his fellow students</item>-->
+        <!--<item>Uniform clean and/or complete</item>-->
+        <!--<item>Good personal hygiene</item>-->
+        <!--<item>Talks in class</item>-->
+        <!--<item>Annoys his colleagues</item>-->
+        <!--<item>Does not participate in class</item>-->
+        <!--<item>Does not bring his homework</item>-->
+        <!--<item>Poor personal hygiene</item>-->
+        <!--<item>Disrespect the teacher</item>-->
+        <!--<item>Eats in class</item>-->
+    </string-array>
+
+    <string-array name="test">
+        <item>@string/str_g_selectone</item>
+        <item>@string/str_gtest_1</item>
+        <item>@string/str_gtest_2</item>
+        <item>@string/str_gtest_3</item>
+        <item>@string/str_gtest_4</item>
+        <item>@string/str_gtest_5</item>
+        <item>@string/str_gtest_6</item>
+        <item>@string/str_gtest_7</item>
+        <item>@string/str_gtest_8</item>
+        <item>@string/str_gtest_9</item>
+        <item>@string/str_gtest_10</item>
+        <item>@string/str_gtest_11</item>
+        <item>@string/str_gtest_12</item>
+        <item>@string/str_gtest_13</item>
+        <item>@string/str_gtest_14</item>
+        <item>@string/str_gtest_15</item>
+        <item>@string/str_gtest_16</item>
+    </string-array>
+
+
+    <string name="album_name">SisTZ</string>
+    <string name="cannot">Cannot</string>
+    <!-- Menu -->
+    <string name="str_w_a">Enter school\'s EMIS code</string>
+    <string name="str_w_b">Enter school\'s name</string>
+    <string name="str_w_c">What levels do you have in the morning shift?</string>
+    <string name="str_w_d">What levels do you have in the afternoon shift?</string>
+    <string name="str_w_e">What levels do you have in the evening shift?</string>
+    <string name="str_w_f">The information required has been entered.</string>
+    <string name="str_w_f1">to begin has been entered.</string>
+    <string name="str_w_g">Do you wish to proceed?</string>
+    <string name="str_w_h">(You can go back to make changes before proceeding)</string>
+    <string name="str_w_back">Back</string>
+    <string name="str_w_next">Next</string>
+    <string name="str_w_saveandstart">   Save and Start</string>
+    <string name="str_w_alredyinfo">This EMIS school code already has information</string>
+
+    <!-- Menu -->
+    <string name="str_m_tv1">Baseline</string>
+    <string name="str_m_tv2">Daily Classroom</string>
+    <string name="str_m_tv3">Reports</string>
+    <string name="str_m_tv4">School Characteristics</string>
+    <string name="str_m_tv5">Teachers</string>
+    <string name="str_m_tv6">Students</string>
+    <string name="str_m_tv7">Attendance</string>
+    <string name="str_m_tv8">Behaviour</string>
+    <string name="str_m_tv9">Evaluation</string>
+    <string name="str_m_tv10">Finance</string>
+    <string name="str_m_tv11">Capitation Grants</string>
+
+    <string name="str_s_tv1">School settings</string>
+    <string name="str_s_tv11">School EMIS Code</string>
+    <string name="str_s_tv12">School Name</string>
+    <string name="str_s_tv13">Shifts and Levels</string>
+    <string name="str_s_tv14">Morning</string>
+    <string name="str_s_tv15">Afternoon</string>
+    <string name="str_s_tv16">Evening</string>
+    <string name="str_s_tv2">Administrator settings</string>
+    <string name="str_s_tv21">Administrator password</string>
+    <string name="str_s_tv22">Server Tablet number</string>
+    <string name="str_s_tv23">Server IP or URL</string>
+    <string name="str_s_tv3">Search for updates ...</string>
+    <string name="str_s_tv4">Backup</string>
+    <string name="str_s_tv5">Restore</string>
+    <string name="str_s_tv6">Language</string>
+    <string name="str_s_tv7">About SIS</string>
+    <string name="str_s_tv10">Initialize database</string>
+    <string name="str_s_tv8">Automatic promotion</string>
+    <string name="str_bl_0"> 1. School Profile and Particulars</string>
+    <string name="str_bl_1">1. EMIS Code</string>
+    <string name="str_bl_2">2. School name</string>
+    <string name="str_bl_3">3. Location</string>
+    <string name="str_region">Region</string>
+    <string name="str_council">LGA</string>
+    <string name="str_ward">Ward</string>
+    <string name="str_bl_4">Location</string>
+    <string name="str_rural">Rural</string>
+    <string name="str_urban">Urban</string>
+    <string name="str_bl_5">4. Contact mobile number</string>
+    <string name="str_bl_6">5. Contact E-mail address</string>
+    <string name="str_bl_7">6. NECTA (Secondary Only) code Form 4</string>
+    <string name="str_bl_8">7. NECTA (Secondary Only) code Form 6</string>
+    <string name="str_bl_9">6. Type of school</string>
+    <string name="str_bl_9a">Government</string>
+    <string name="str_bl_9b">Private</string>
+    <string name="str_bl_9c">Community/Ward</string>
+    <string name="str_bl_9d">Religious</string>
+    <string name="str_bl_9e">Other</string>
+    <string name="str_bl_10">7. School Registration Number</string>
+    <string name="str_bl_11">8. Year of Establishment</string>
+    <string name="str_bl_12">10. School GPS Coordinates</string>
+    <string name="str_bl_12a">Start Record Location</string>
+    <string name="str_bl_12b">No coordinates available...</string>
+    <string name="str_bl_12c">Stop Record Location</string>
+    <string name="str_bl_13">11. Schools Pictures</string>
+    <string name="str_bl_msj1">Important</string>
+    <string name="str_bl_msj2">Are you sure you want to save?</string>
+    <string name="str_bl_msj3">Confirm</string>
+    <string name="str_bl_msj4">Cancel</string>
+    <string name="str_bl_msj5">The information has been updated.</string>
+    <string name="str_bl_msj6">You must enter Geographical position.</string>
+    <string name="str_bl_msj7">Are you sure you want to quit?</string>
+    <string name="str_bl_msj8">Are you sure to delete record?</string>
+    <string name="str_bl_msj9">Empty</string>
+    <string name="str_bl_msj10">Teacher has assigned subjects</string>
+    <string name="str_bl_msj11">You need put a Teacher ID</string>
+    <!-- Second Form-->
+    <string name="str_bl2_a">2. Pre-primary Classroom</string>
+    <string name="str_bl2_b">Classrooms</string>
+    <string name="str_bl2_c">Write the NUMBER OF CLASSROOMS used by Pre-Primary Education only (rooms used for instruction; excludes office, staff room, and storage) by construction type.</string>
+    <string name="str_bl2_d">1. Solid</string>
+    <string name="str_bl2_e">Built with cement blocks</string>
+    <string name="str_bl2_f">2. Semi-solid</string>
+    <string name="str_bl2_g">Built largely with mud/burnt bricks</string>
+    <string name="str_bl2_h">3. Makeshift</string>
+    <string name="str_bl2_i">Temporary made of materials, such as mat and sticks</string>
+    <string name="str_bl2_j">4. Partitioned</string>
+    <string name="str_bl2_k">Rooms divided into parts as classrooms</string>
+    <string name="str_bl2_l">5. Open-air / under the tree</string>
+    <string name="str_bl2_m">6. Other</string>
+    <string name="str_bl2_n">Any other space used as a classroom</string>
+    <string name="str_bl2_o">Classroom furniture totals</string>
+    <string name="str_bl2_p">Write the number for each type of furniture used by Pre-Primary Education only.</string>
+    <string name="str_bl2_q">1. Chairs</string>
+    <string name="str_bl2_r">3. Desks single seater</string>
+    <string name="str_bl2_s">4. Desks 2 seater</string>
+    <string name="str_bl2_t">5. Desks 3 seater</string>
+    <string name="str_bl2_u">6. Benches single seater</string>
+    <string name="str_bl2_v">7. Benches 2 seater</string>
+    <string name="str_bl2_w">8. Benches 3 seater</string>
+    <string name="str_bl2_x">9. Chalkboard</string>
+    <string name="str_bl2_msj1">You must enter at least one record.</string>
+    <!-- Third Form-->
+    <string name="str_bl3_a">4. Primary Curriculum and Instruction</string>
+    <string name="str_bl3_b">National Curriculum</string>
+    <string name="str_bl3_c">1. Does your school use National Curriculum?</string>
+    <string name="str_bl3_d">2. How many copies of the national curriculum do you have? Write the number</string>
+    <string name="str_bl3_e">Write the number of textbooks (include only those that are usable) by grade and subject.</string>
+    <string name="str_bl3_f">1. Mathematics (M)</string>
+    <string name="str_bl3_g">2. English (LA)</string>
+    <string name="str_bl3_h">3. Kiswahili (LA)</string>
+    <string name="str_bl3_i">4. French (LA)</string>
+    <string name="str_bl3_j">5. Science (S)</string>
+    <string name="str_bl3_k">6. Geography (SS)</string>
+    <string name="str_bl3_l">7. Civics (SS)</string>
+    <string name="str_bl3_m">8. History (SS)</string>
+    <string name="str_bl3_n">9. Vocational skills (O)</string>
+    <string name="str_bl3_o">10. Personality and Sports (O)</string>
+    <string name="str_bl3_p">11. ICT (O)</string>
+    <string name="str_bl3_p1">12. Religion Studies</string>
+    <string name="str_bl3_p2">13. Reading</string>
+    <string name="str_bl3_p3">14. Writing</string>
+    <string name="str_bl3_p4">15. Arithmetic</string>
+    <string name="str_bl3_p5">16. Health and Environment Education</string>
+    <string name="str_bl3_p6">17. Games, Sports and Fine and Performing Art</string>
+    <string name="str_bl3_q">19. Other</string>
+    <string name="str_bl3_r">20. How often do your students use the textbooks in the classroom?</string>
+    <string name="str_bl3_s">Language Arts (LA)</string>
+    <string name="str_bl3_t">Mathematics (M)</string>
+    <string name="str_bl3_u">Sciences (S)</string>
+    <string name="str_bl3_v">Social Studies (SS)</string>
+    <string name="str_bl3_w">Other (O)</string>
+    <string name="str_bl3_x">21. Do you have a safe location to store the textbooks?</string>
+    <string name="str_bl3_y">Any other textbooks that are not included in the list above</string>
+    <string name="str_bl3_1">Std. I</string>
+    <string name="str_bl3_2">Std. II</string>
+    <string name="str_bl3_3">Std. III</string>
+    <string name="str_bl3_4">Std. IV</string>
+    <string name="str_bl3_5">Std. V</string>
+    <string name="str_bl3_6">Std. VI</string>
+    <string name="str_bl3_7">Std. VII</string>
+
+    <!-- Report 11 start-->
+    <string name="str_bl3_f_subject">Mathematics</string>
+    <string name="str_bl3_g_subject">English</string>
+    <string name="str_bl3_h_subject">Kiswahili</string>
+    <string name="str_bl3_i_subject">French</string>
+    <string name="str_bl3_j_subject">Science</string>
+    <string name="str_bl3_k_subject">Geography</string>
+    <string name="str_bl3_l_subject">Civics</string>
+    <string name="str_bl3_m_subject">History</string>
+    <string name="str_bl3_n_subject">Vocational skills</string>
+    <string name="str_bl3_o_subject">Personality and Sports</string>
+    <string name="str_bl3_p_subject">ICT</string>
+    <string name="str_bl3_p1_subject">Religion Studies</string>
+    <string name="str_bl3_p2_subject">Reading</string>
+    <string name="str_bl3_p3_subject">Writing</string>
+    <string name="str_bl3_p4_subject">Artithmetic</string>
+    <string name="str_bl3_p5_subject">Health and Environment Education</string>
+    <string name="str_bl3_p6_subject">Games, Sports and Fine and Performing Art</string>
+    <string name="str_bl3_q_subject">Other</string>
+    <!-- Report 11 end-->
+
+    <!-- Fourth Form-->
+    <string name="str_bl4_a">3. Primary Class Characteristics and Furniture</string>
+    <string name="str_bl4_b">Write the NUMBER OF CLASSROOMS for Primary Education (rooms used for instruction, excludes office, staff room and storage) by construction type.</string>
+    <string name="str_bl4_c">Write the number of items of furniture at your school for each type.</string>
+    <!-- Fifth Form-->
+    <string name="str_bl5_a">5. Secondary School Curriculum and Instruction</string>
+    <string name="str_bl5_b">National curriculum</string>
+    <string name="str_bl5_c">1. Does your school use the national curriculum?</string>
+    <string name="str_bl5_d">2. How many copies of the national curriculum do you have? Write the number:</string>
+    <string name="str_bl5_e">TIE</string>
+    <string name="str_bl5_f">1. Does your school use the TIE syllabus?</string>
+    <string name="str_bl5_g">2. Do you have a safe location to store the textbooks?</string>
+    <string name="str_bl5_h">Student Performance</string>
+    <string name="str_bl5_i">1. Write the total number of students who have passed or failed the NECTA exams scores in Form 4 and Form 6 by subject and Form. (Use the results that are available as of March this year. These will most likely be the last years results:</string>
+    <string name="str_bl5_j">5. Secondary School Curriculum and Instruction (cont.)</string>
+    <string name="str_bl5_k">Textbooks TIE Syllabus</string>
+    <string name="str_bl5_l">1. Write the number of students by form gender and subject. Write the number of textbooks and Syllabus (include only those that are usable) by form and subject. Write the total number of students by gender and subject and the total number of text book by subject</string>
+    <string name="str_bl5_m">Select FORM</string>
+    <!-- Sixth Form-->
+    <string name="str_bl6_a">6. Secondary Classroom Characteristics and Furniture</string>
+    <string name="str_bl6_b">Write the NUMBER OF CLASSROOMS (rooms used for instruction; excludes office, staff room, and storage) by construction type.</string>
+    <string name="str_bl6_c">Write the number of items of furniture at your school for each type.</string>
+    <string name="str_bl6_d">2. Tables</string>
+    <string name="str_bl6_e">3. Benches</string>
+    <string name="str_bl6_f">4. Chalkboard</string>
+    <!-- Seventh Form-->
+    <string name="str_bl7_a">5. School Infrastructure</string>
+    <string name="str_bl7_b">The remaining Sections concern PRE-PRIMARY and PRIMARY.</string>
+    <string name="str_bl7_c">1. School building</string>
+    <string name="str_bl7_d">What materials is your school built from?</string>
+    <string name="str_bl7_e1">Solid Built with cement blocks and steel</string>
+    <string name="str_bl7_e2">Semi Solid Built largely with mud blocks</string>
+    <string name="str_bl7_e3">Make-Shift Temporary made of materials</string>
+    <string name="str_bl7_e4">Open Air /Under a Tree</string>
+    <string name="str_bl7_f">2. School library</string>
+    <string name="str_bl7_g">Is there a school library? </string>
+    <string name="str_bl7_h">3. Is there a librarian or staff member looking after the books?</string>
+    <string name="str_bl7_i">4. Reading space for how many students</string>
+    <string name="str_bl7_j">5. Number of books in the library</string>
+    <string name="str_bl7_k">6. Number of library shelves</string>
+    <string name="str_bl7_l">Other facilities</string>
+    <string name="str_bl7_m">Which of the following does your school have? </string>
+    <string name="str_bl7_n">1. Does the school have coverage</string>
+    <string name="str_bl7_o">2. Fence or surrounding walls</string>
+    <string name="str_bl7_p">3.b. Main source of drinking water</string>
+    <string name="str_bl7_p1">Pipe born water</string>
+    <string name="str_bl7_p2">Hand pump</string>
+    <string name="str_bl7_p3">Creek</string>
+    <string name="str_bl7_p4">Facility needs repair</string>
+    <string name="str_bl7_q">4. Availability of latrine or toilet facility</string>
+    <string name="str_bl7_r">5. Specify the number of pit latrines available:</string>
+    <string name="str_bl7_r1">Boys only</string>
+    <string name="str_bl7_r2">Girls only</string>
+    <string name="str_bl7_r3">Boys and girls combined</string>
+    <string name="str_bl7_r4">Male staff only</string>
+    <string name="str_bl7_r5">Female staff only</string>
+    <string name="str_bl7_r6">Male and female staff combined</string>
+    <string name="str_bl7_s">6. Which of the following facilities are available at your school?</string>
+    <string name="str_bl7_s1">Auditorium</string>
+    <string name="str_bl7_s2">Health Clinic</string>
+    <string name="str_bl7_s3">Head of school’s office</string>
+    <string name="str_bl7_s4">School Farm</string>
+    <string name="str_bl7_s5">Staff room/office</string>
+    <string name="str_bl7_s6">Hand Washing Facility</string>
+    <string name="str_bl7_s7">School Garden</string>
+    <string name="str_bl7_s8">Administration block</string>
+    <string name="str_bl7_s9">Source of power</string>
+    <string name="str_bl7_s10">Computer lab</string>
+    <string name="str_bl7_s11">Functioning generator</string>
+    <string name="str_bl7_s12">Regular Fuel for generator</string>
+    <string name="str_bl7_s13">Sports/Playground</string>
+    <string name="str_bl7_s14">Staff housing</string>
+    <string name="str_bl7_s15">Science lab</string>
+    <string name="str_bl7_s16">"Transport "</string>
+    <string name="str_bl7_s17">Cafeteria</string>
+    <string name="str_bl7_s18">Store</string>
+    <string name="str_bl7_s19">Wood work</string>
+    <string name="str_bl7_s20">Home Economic</string>
+    <string name="str_bl7_s21">Metal work</string>
+    <string name="str_bl7_s22">Auto mechanics</string>
+    <string name="str_bl7_t">Teachers Living Quarters </string>
+    <string name="str_bl7_u">Write the number of teacher\'s living quarters by construction type:</string>
+    <string name="str_bl7_v">1. Solid</string>
+    <string name="str_bl7_v1">Built with cement blocks and steel</string>
+    <string name="str_bl7_w">2. Semi-solid Built</string>
+    <string name="str_bl7_w1">Llargely with mud/burnt bricks</string>
+    <string name="str_bl7_x">3. Makeshift</string>
+    <string name="str_bl7_x1">Temporary made of materials, such as mat and sticks</string>
+    <string name="str_bl7_y">4. Other</string>
+    <string name="str_bl7_y1">Any other space used as living quarters</string>
+    <!-- Eighth Form -->
+    <string name="str_bl8_a">6. School Support</string>
+    <string name="str_bl8_b">1. School finance:</string>
+    <string name="str_bl8_c">Does your school receive grants from the following entities in the previous 12 Months? If YES, specify the amount of grant (in Tanzanian Shillings) from each of the sources. If NO, move on.</string>
+    <string name="str_bl8_d">Central Government (CG)</string>
+    <string name="str_bl8_e">Local Government Authorities (LGAs)</string>
+    <string name="str_bl8_f">Private group/individual</string>
+    <string name="str_bl8_g">Religious group</string>
+    <string name="str_bl8_h">Community</string>
+    <string name="str_bl8_i">Domestic NGO/agencies</string>
+    <string name="str_bl8_j">International NGO/agencies</string>
+    <string name="str_bl8_k">2. Development Partners Support</string>
+    <string name="str_bl8_l">Does your school receive support from the following development partners?  (Mark all necessary)</string>
+    <string name="str_bl8_l1">UNICEF</string>
+    <string name="str_bl8_l2">USAID</string>
+    <string name="str_bl8_l3">Global Partnership for Education (GPE)</string>
+    <string name="str_bl8_l4">DFID</string>
+    <string name="str_bl8_m">3. School materials</string>
+    <string name="str_bl8_n">Does your school receive materials from the government or an organization?</string>
+    <string name="str_bl8_o">Food/school feeding</string>
+    <string name="str_bl8_p">School supplies (stationary etc.)</string>
+    <string name="str_bl8_q">Training (for teachers, PTM,  etc.)</string>
+    <string name="str_bl8_amounts">Amounts (Tshs)</string>
+    <string name="str_bl8_otherspecify">Other Specify</string>
+    <string name="str_bl8_prepri">PRE-PRI</string>
+    <string name="str_bl8_pri">PRIM.</string>
+    <string name="str_bl8_sec">Sec.</string>
+    <string name="str_bl8_ifyesbywhom">If yes, by whom</string>
+    <string name="str_bl8_both">Both</string>
+    <!-- Nineth Form -->
+    <string name="str_bl9_a">7. School Management</string>
+    <string name="str_bl9_b">Parent-Teacher Meeting (PTM):</string>
+    <string name="str_bl9_c">1. Is there functioning PTM?</string>
+    <string name="str_bl9_d">2. How many times does it meet in a year?</string>
+    <string name="str_bl9_e">3. Chairpersons name</string>
+    <string name="str_bl9_f">4. Chairpersons telephone/mobile number</string>
+    <string name="str_bl9_g">School Management Committee</string>
+    <string name="str_bl9_h">1. Is there a functioning School Board/ Committee?</string>
+    <string name="str_bl9_i">2. How many times does it meet in a year?</string>
+    <string name="str_bl9_j">3. Chairpersons name</string>
+    <string name="str_bl9_k">4. Chairpersons telephone/mobile number</string>
+    <string name="str_bl9_once">Once</string>
+    <string name="str_bl9_twice">Twice</string>
+    <string name="str_bl9_three">Three times</string>
+    <string name="str_bl9_four">Four or more times</string>
+    <string name="str_bl9_zero">None</string>
+
+    <string name="str_g_notification">Notification</string>
+    <string name="str_g_everyday">Everyday</string>
+    <string name="str_g_dayaweek">2-4 days a week</string>
+    <string name="str_g_never">Never</string>
+    <string name="str_g_yes">Yes</string>
+    <string name="str_g_needs_repair">Needs repair</string>
+    <string name="str_g_no">No</string>
+    <string name="str_g_textbooks">Textbooks</string>
+    <string name="str_g_english">English</string>
+    <string name="str_g_mathematics">Mathematics</string>
+    <string name="str_g_biology">Biology</string>
+    <string name="str_g_kiswahili">Kiswahili</string>
+    <string name="str_g_agriculture">Agriculture</string>
+    <string name="str_g_accounts">Accounts</string>
+    <string name="str_g_additional_mathematics">Additional Mathematics</string>
+    <string name="str_g_arabic">Arabic</string>
+    <string name="str_g_basic_mathematics">Basic Mathematics</string>
+    <string name="str_g_bible_knowledge">Bible Knowledge</string>
+    <string name="str_g_book_keeping">Book Keeping</string>
+    <string name="str_g_chemistry">Chemistry</string>
+    <string name="str_g_civics">Civics</string>
+    <string name="str_g_civil_technical">Civil Technical</string>
+    <string name="str_g_commerce">Commerce</string>
+    <string name="str_g_cookery">Cookery</string>
+    <string name="str_g_computer_studies">Computer Studies</string>
+    <string name="str_g_economics">Economics</string>
+    <string name="str_g_electronics">Electronics</string>
+    <string name="str_g_english_literature">English Literature</string>
+    <string name="str_g_fine_art">Fine Art</string>
+    <string name="str_g_food_and_nutrition">Food and Nutrition</string>
+    <string name="str_g_french">French</string>
+    <string name="str_g_general_studies">General Studies</string>
+    <string name="str_g_geography">Geography</string>
+    <string name="str_g_history">History</string>
+    <string name="str_g_islamic_knowledge">Islamic Knowledge</string>
+    <string name="str_g_mechanics">Mechanics</string>
+    <string name="str_g_music">Music</string>
+    <string name="str_g_physics">Physics</string>
+    <string name="str_g_sports_physical_education">Sports/ Physical Education</string>
+    <string name="str_g_advanced_mathematics">Advanced Mathematics</string>
+    <string name="str_g_basic_applied_mathematics">Basic Applied Mathematics</string>
+    <string name="str_g_f1">Form 1</string>
+    <string name="str_g_f2">Form 2</string>
+    <string name="str_g_f3">Form 3</string>
+    <string name="str_g_f4">Form 4</string>
+    <string name="str_g_f5">Form 5</string>
+    <string name="str_g_f6">Form 6</string>
+    <string name="str_g_pass">Pass</string>
+    <string name="str_g_fail">Fail</string>
+    <string name="str_g_m">M</string>
+    <string name="str_g_f">F</string>
+    <string name="str_g_other">Other</string>
+    <string name="str_g_students">Students</string>
+    <string name="str_g_books">Books</string>
+    <string name="str_g_shelves">Shelves</string>
+    <string name="str_g_none">None</string>
+    <string name="str_g_school_characteristics">School characteristics</string>
+    <string name="str_g_government">Government</string>
+    <string name="str_g_furniture">Furniture</string>
+    <string name="str_g_food_school_feeding">Food/school feeding</string>
+    <string name="str_g_male">Male</string>
+    <string name="str_g_female">Female</string>
+    <string name="str_g_msj1">Server number not defined. Go to Settings -> Administrator</string>
+    <string name="str_g_msj2">Your application is up to date.</string>
+    <string name="str_g_msj3">You have made a Local backup.</string>
+    <string name="str_g_msj4">You have made a Local restore.</string>
+    <string name="str_g_msj5">You have made a WEB backup.</string>
+    <string name="str_g_msj6">You have made a WEB restore.</string>
+    <string name="str_g_msj7">There is a new version available. Update?</string>
+    <string name="str_g_msj8">You are about to make a backup ...</string>
+    <string name="str_g_msj9">You are about to make a restore ...</string>
+    <string name="str_g_msj10">There are information with this code</string>
+    <string name="str_g_msj11">Are you sure to want initialize database?</string>
+    <string name="str_g_msj12">If you need to initialize the database, contact your Administrator</string>
+
+    <string name="str_g_ok">Ok</string>
+    <string name="str_g_confirm">Confirm</string>
+    <string name="str_g_cancel">Cancel</string>
+    <string name="str_g_receiver">Receiver</string>
+    <string name="str_g_local">Local</string>
+    <string name="str_g_web">Web</string>
+    <string name="str_g_teacherandstaff">Staff (Teaching and Non teaching)</string>
+    <string name="str_g_areport">Attendance Report</string>
+    <string name="str_g_treport">Teacher Report</string>
+    <string name="str_g_sreport">Student Report</string>
+    <string name="str_g_year">Year</string>
+    <string name="str_g_shift">Shift</string>
+    <string name="str_g_level">Level</string>
+    <string name="str_g_grade">Grade</string>
+    <string name="str_g_stream">Stream</string>
+    <string name="str_g_subject">Subject</string>
+    <string name="str_g_date">Date</string>
+    <string name="str_g_present">Present</string>
+    <string name="str_g_absence">Absent</string>
+    <string name="str_g_student">Student</string>
+    <string name="str_g_teacher">Staff</string>
+    <string name="str_g_result">Result</string>
+    <string name="str_g_selectone">Select one</string>
+    <string name="str_g_morning">Morning</string>
+    <string name="str_g_afternoon">Afternoon</string>
+    <string name="str_g_evening">Evening</string>
+    <string name="str_g_all">All</string>
+    <string name="str_g_std1">STD 1</string>
+    <string name="str_g_std2">STD 2</string>
+    <string name="str_g_std3">STD 3</string>
+    <string name="str_g_std4">STD 4</string>
+    <string name="str_g_std5">STD 5</string>
+    <string name="str_g_std6">STD 6</string>
+    <string name="str_g_std7">STD 7</string>
+    <string name="str_g_yeari">Year I</string>
+    <string name="str_g_yearii">Year II</string>
+    <string name="str_g_reading">Reading</string>
+    <string name="str_g_writing">Writing</string>
+    <string name="str_g_arithmetic">Arithmetic</string>
+    <string name="str_g_healt">Health and Environmental Education</string>
+    <string name="str_g_games">Games, Sports and Fine and Performing Art</string>
+    <string name="str_g_religion">Religion Studies</string>
+    <string name="str_g_science">Science</string>
+    <string name="str_g_vocational_skills">Vocational Skills</string>
+    <string name="str_g_ict">ICT</string>
+    <string name="str_g_personality">Personality, Sports and Games</string>
+    <string name="str_gtest_test">Test</string>
+    <string name="str_gtest_note">Score</string>
+
+
+    <!--teacher string -->
+    <string name="str_t_a">1.  Staff (Teachers and non-teachers)</string>
+    <string name="str_t_b">Personal Information</string>
+    <string name="str_t_c">Staff ID</string>
+    <string name="str_t_d">Class teacher</string>
+    <string name="str_t_e">Subject teacher</string>
+    <string name="str_t_f">Non-teacher</string>
+    <string name="str_t_g">Surname</string>
+    <string name="str_t_h">Given names</string>
+    <string name="str_t_i">Sex</string>
+    <string name="str_t_j">Year of birth</string>
+    <string name="str_t_k">Check No.</string>
+    <string name="str_t_l">Current position</string>
+    <string name="str_t_mphi">Head of school</string>
+    <string name="str_t_n">Deputy Head of school</string>
+    <string name="str_t_o">Registrar</string>
+    <string name="str_t_p">Custodian</string>
+    <string name="str_t_q">Teacher/Trainer</string>
+    <string name="str_t_r">Other</string>
+    <string name="str_t_s">Level(s) Teaching</string>
+    <string name="str_t_t">O Level Secondary</string>
+    <string name="str_t_u">A Level Secondary</string>
+    <string name="str_t_v">No Teaching</string>
+    <string name="str_t_w">Highest Professional Qualification Acquired</string>
+    <string name="str_t_x">No teaching certificate</string>
+    <string name="str_t_y">Grade B Certificate</string>
+    <string name="str_t_z">Grade A Certificate</string>
+    <string name="str_t_za">Diploma in Education</string>
+    <string name="str_t_zb">Higher Diploma</string>
+    <string name="str_t_zc">Bachelor Degree</string>
+    <string name="str_t_zd">Post. Grad Diploma</string>
+    <string name="str_t_ze">Master of Education</string>
+    <string name="str_t_zf">PhD/Ed.D</string>
+    <string name="str_t_zg">Highest Academic Qualification Acquired</string>
+    <string name="str_t_zh">Did not complete secondary school</string>
+    <string name="str_t_zi">Completed Secondary School</string>
+    <string name="str_t_zj">Any Bachelor\'s degree</string>
+    <string name="str_t_zk">Any Masters\'s degree or above</string>
+    <string name="str_t_zl">Subject(s) Teaching</string>
+    <string name="str_t_zm">Language arts</string>
+    <string name="str_t_zn">Mathematics</string>
+    <string name="str_t_zo">Sciences</string>
+    <string name="str_t_zp">Social studies</string>
+    <string name="str_t_zq">Other</string>
+    <string name="str_t_zr">Months in current position</string>
+    <string name="str_t_zs">Main Source of Salary</string>
+    <string name="str_t_zt">Government</string>
+    <string name="str_t_zu">Private Inst. (firms, religious bodies, NGO)</string>
+    <string name="str_t_zv">Household (family, community)</string>
+    <string name="str_t_zw">Volunteer</string>
+    <string name="str_t_zx">Telephone number</string>
+    <string name="str_t_zy">e-mail</string>
+    <string name="str_t_zz">Address</string>
+    <string name="str_t_zza">Shift</string>
+    <string name="str_t_zzb">Level</string>
+    <string name="str_t_zzc">Grade-Standard</string>
+    <string name="str_t_zzd">Stream</string>
+    <string name="str_t_zze">Subject</string>
+    <!-- Subject Assign Teacher -->
+    <string name="str_ta_a">2. Subject Assignment</string>
+
+
+    <!--student -->
+    <string name="str_s_a">1. Student</string>
+    <string name="str_s_b">Personal Data</string>
+    <string name="str_s_c">Student ID</string>
+    <string name="str_s_d">First Name</string>
+    <string name="str_s_e">Middle Name</string>
+    <string name="str_s_f">Family Name</string>
+    <string name="str_s_g">Parent\'s/Guardian mobile number</string>
+    <string name="str_s_h">Does the student have a disability?</string>
+    <string name="str_s_i">Vision</string>
+    <string name="str_s_j">Hearing</string>
+    <string name="str_s_k">Physical</string>
+    <string name="str_s_l">Other Physical Handcap (Please Specify)</string>
+    <string name="str_s_m">Student Academic Record</string>
+    <string name="str_s_n">Attended Pre-school</string>
+    <string name="str_s_o">Name of Pre-School</string>
+    <string name="str_s_p">Attended School Readiness Program</string>
+    <string name="str_s_q">Location</string>
+    <string name="str_s_r">Has the student attended another primary school previously?</string>
+    <string name="str_s_s">Name of School</string>
+    <string name="str_s_t">Level of Admittance</string>
+    <string name="str_s_u">Student School Exit Information</string>
+    <string name="str_s_v">School Exit Date:</string>
+    <string name="str_s_w">Duration of Attendance</string>
+    <string name="str_s_x">Reason for Exit</string>
+    <string name="str_s_y">Graduation</string>
+    <string name="str_s_z">Transferred</string>
+    <string name="str_s_za">Dropped Out</string>
+    <string name="str_s_zb">Death</string>
+    <string name="str_s_zc">Reason for Drop Out</string>
+    <string name="str_s_zd">Truancy</string>
+    <string name="str_s_ze">Pregnancy</string>
+    <string name="str_s_zf">Need to Work</string>
+    <string name="str_s_zg">Distance to School</string>
+    <!-- Grade Assignment STUDENT -->
+    <string name="str_sa_a"> 2. Enrollment </string>
+    <string name="str_sa_b">Grade Assignment</string>
+    <string name="str_sa_c">Repeater</string>
+    <string name="str_sa_d">Non repeater</string>
+    <string name="str_sa_e">"New Entrant "</string>
+    <string name="str_sa_f">3. Attendance</string>
+    <string name="str_sa_g">List of absences</string>
+    <string name="str_sa_h">Reason</string>
+    <string name="str_sa_i">4. Evaluation</string>
+    <string name="str_sa_j">Grades</string>
+    <string name="str_sa_k">5. Behaviour</string>
+    <string name="str_sa_l">Behaviour list</string>
+    <string name="str_sa_m">Behaviour</string>
+
+    <!-- Finance Form -->
+    <string name="str_ff_a">Primary School Information System: Finance Form</string>
+    <string name="str_ff_b">Capitation Grant Monthly Report</string>
+    <string name="str_ff_c">School Name:</string>
+    <string name="str_ff_d">School EMIS number:</string>
+    <string name="str_ff_e">Balance at start of the month:</string>
+    <string name="str_ff_f">Total amounts Received this month:</string>
+    <string name="str_ff_g">Total amount at start of the month:</string>
+    <string name="str_ff_h">Total amount at the end of the month:</string>
+    <string name="str_ff_i1">Expenditure Cap</string>
+    <string name="str_ff_i2">Items Purchased</string>
+    <string name="str_ff_i3">Unit Cost</string>
+    <string name="str_ff_i4">Total</string>
+    <string name="str_ff_i5">Balance</string>
+    <string name="str_ff_j">30% non-textual materials</string>
+    <string name="str_ff_k">30% school infrastructure (repair)</string>
+    <string name="str_ff_l">20% continuous assessment exams</string>
+    <string name="str_ff_m">10% sport coordination</string>
+    <string name="str_ff_n">10% administration</string>
+
+
+    <!-- Daily Classroom ATTENDANCE -->
+    <string name="str_dc_a">1. Set attendance date</string>
+    <string name="str_dc_b">2. Select teacher and subject:</string>
+    <string name="str_dc_c">3. Is the teacher in the classroom:</string>
+    <string name="str_dc_c1">School staff in charge</string>
+    <string name="str_dc_c2">Nobody in charge</string>
+    <string name="str_dc_d">4. Attendance list:</string>
+    <!-- Daily Classroom BEHAVIOUR -->
+    <string name="str_dc_e">1. Set behaviour date:</string>
+    <string name="str_dc_f">2. Select teacher and subject:</string>
+    <string name="str_dc_g">3. Student list:</string>
+    <!-- Daily Classroom EVALUATION -->
+    <string name="str_dc_h">1. Set evaluation date:</string>
+    <string name="str_dc_i">2. Select teacher and subject:</string>
+    <string name="str_dc_j">3. Evaluation type:</string>
+
+    <string name="str_en">English</string>
+    <string name="str_sw">Kiswahili</string>
+    <string name="str_es">Spanish</string>
+    <!--<string name="str_pt" >Portuguese</string>-->
+    <string-array name="languages">
+        <item>@string/str_en</item>
+        <item>@string/str_sw</item>
+        <!--<item>@string/str_es</item>-->
+        <!--<item>@string/str_pt</item>-->
+    </string-array>
+    <string name="str_pt">Portuguese</string>
+    <string name="action_settings11">Automatic promotion</string>
+    <string name="str_g_msj13">Are you sure to do automatic promotion?</string>
+    <string name="automatic_promotion">Automatic promotion finished successfully</string>
+    <string name="not_connected_internet">Not connected internet</string>
+    <string name="str_g_therearenot_student">There are no students assigned or Teacher is not \"Class teacher\"</string>
+    <string name="str_g_enter_information">You should enter valid information.</string>
+    <string name="str_g_change_emis_code">This module allows you to change structural information of SIS. Do not introduce changes unless strictly advised. Press Confirm if you wish to continue or press Cancel to return to the main menu.</string>
+    <string name="str_g_warning">Warning</string>
+    <string name="str_g_change_emis_code_confirm">You are about to save your changes. This will affect the structure of the database. Press Cancel if you are not sure, otherwise press Confirm to save changes.</string>
+    <string name="str_balance">The balance is lower 0.00  </string>
+    <string name="str_g_social_studies">Social Studies</string>
+    <string name="str_g_civics_and_moral">Civics and Moral</string>
+    <string name="str_g_cience_and_technology">Science and Technology</string>
+    <string name="str_m_tv12">Student Exit</string>
+    <string name="is_your_school">DOES THIS INFORMATION CORRESPOND TO YOUR SCHOOL?</string>
+    <string name="txt_region">REGION : </string>
+    <string name="txt_council">COUNCIL : </string>
+    <string name="txt_ward">WARD : </string>
+    <string name="txt_school">SCHOOL NAME : </string>
+    <string name="txt_emis">EMIS CODE : </string>
+    <string name="txt_is_information_correct">The information above is correct.</string>
+    <string name="error_emis">The EMIS code that you selected is invalid</string>
+    <string name="not_checked_emis_code">You didn\'t chreck the review of the information</string>
+    <string name="report_1_student_daily_attendance_report">Attendance by Student</string>
+    <string name="report_2_teacher_daily_attendance_report">Attendance by Grade and Stream</string>
+    <string name="report_3_classroom_to_pupil">Student-Classroom Ratio</string>
+    <string name="report_4_student_and_teacher_summary">Students and Teachers Summary</string>
+    <string name="report_5_textbook_to_pupil_ratio">Teacher-Student Ratio</string>
+    <string name="report_6_pupil_teacher_ratio">Primary Teacher-Student Ratio</string>
+    <string name="str_monthly">Monthly</string>
+    <string name="str_yearly">Yearly</string>
+    <string name="table_1_report1_name">Name</string>
+    <string name="table_1_report1_days">Days in time period</string>
+    <string name="table_1_report1_days_attended">Total days attended</string>
+    <string name="table_1_report1_average">Average</string>
+    <string name="table_report_no_data_to_show">[No data to show]</string>
+    <string name="table_1_report3_classroom_type">Classroom Type</string>
+    <string name="table_1_report3_total">TOTAL CLASSROOMS</string>
+    <string name="table_1_report3_solid">Solid</string>
+    <string name="table_1_report3_semisolid">Semi-solid</string>
+    <string name="table_1_report3_makeshift">Makeshift</string>
+    <string name="table_1_report3_partitioned">Partitioned</string>
+    <string name="table_1_report3_openair">Open-air</string>
+    <string name="table_1_report3_other">Other</string>
+    <string name="table_2_report3_title">TOTAL Primary Students enrolled</string>
+    <string name="gauge_title_report3">Primary Student-Classroom Ratio</string>
+    <string name="title_table1_report4_grade">Grade</string>
+    <string name="title_table1_report4_girls">Girls</string>
+    <string name="title_table1_report4_boy">Boys</string>
+    <string name="title_table1_report4_total">Total</string>
+    <string name="title_table1_report4">Students</string>
+    <string name="title_table1_report4_1">STextR</string>
+    <string name="title_table2_report4_female">Female</string>
+    <string name="title_table2_report4_male">Male</string>
+    <string name="title_table2_report4">Teachers</string>
+    <string name="report5_title_gauge_1">Total Primary Student-Teacher Ratio</string>
+    <string name="txt_standard1">Standard I</string>
+    <string name="txt_standard2">Standard II</string>
+    <string name="txt_standard3">Standard III</string>
+    <string name="txt_standard4">Standard IV</string>
+    <string name="txt_standard5">Standard V</string>
+    <string name="txt_standard6">Standard VI</string>
+    <string name="txt_standard7">Standard VII</string>
+    <string name="txt_report5_student_teacher">Student-Teacher Ratio by Standard</string>
+    <string name="title_grap1_report2">% Primary School Attendance Average</string>
+    <string name="title_grap2_report2">% Primary School Attendance by Grade</string>
+    <string name="title_grap3_report2">% “Primary School Attendance by Stream</string>
+    <string name="title_grap1_report7">Evaluation Average for </string>
+    <string name="title_grap2_report7">Evaluation Average for Selected Stream</string>
+    <!--Finance-->
+    <string name="finance_home">Balance</string>
+    <string name="finance_date">Date</string>
+    <string name="finance_previous">Previous Balance:</string>
+    <string name="finance_deposits">Deposits</string>
+    <string name="finance_expenditure">Expenditures</string>
+    <string name="finance_available">Available Balance</string>
+    <string name="finance_activity">Activity</string>
+    <string name="finance_initial_date">Initial Date</string>
+    <string name="finance_final_date">Final Date</string>
+    <string name="finance_current_balance">Current Balance</string>
+    <string name="finance_description">Expenditure Type</string>
+    <string name="finance_deposit_type">Deposit Type</string>
+    <string name="finance_amount">Amount</string>
+    <string name="finance_observation">Description</string>
+    <string name="finance_expenditure_type">Expenditure Type</string>
+    <string name="finance_select_date">Select Date</string>
+    <string name="dialog_select_date">Select Date</string>
+    <string name="delete_item">Do you want delete this item?</string>
+    <string name='yes'>Yes</string>
+    <string name='no'>No</string>
+    <string name="finance_fill">Please introduce an amount, valid date, and type of expense</string>
+    <string name="report_date_title">Date : </string>
+    <string name="str_s_ka">Intellectual disability</string>
+    <string name="str_teach_question_exit">If this teacher has exited the school, the reason for exit is</string>
+    <string name="str_teach_question_exit_a">Transfered to another school</string>
+    <string name="str_teach_question_exit_b">Retired</string>
+    <string name="str_teach_question_exit_c">Resigned for personal reasons</string>
+    <string name="str_teach_question_exit_d">Resigned for health reasons</string>
+    <string name="str_teach_question_exit_e">Resigned for a career change</string>
+    <string name="str_teach_question_exit_f">Was fired</string>
+    <string name="str_teach_question_exit_g">Death</string>
+    <string name="str_studen_orphan">Is this student an orphan?</string>
+    <string-array name="spn_deposits">
+        <item>@string/spn_dep_id16</item>
+        <item>@string/spn_dep_id1</item>
+        <item>@string/spn_dep_id2</item>
+        <item>@string/spn_dep_id3</item>
+        <item>@string/spn_dep_id4</item>
+        <item>@string/spn_dep_id5</item>
+        <item>@string/spn_dep_id6</item>
+        <item>@string/spn_dep_id7</item>
+        <!--<item>@string/spn_dep_id8</item>-->
+        <!--<item>@string/spn_dep_id9</item>-->
+        <!--<item>@string/spn_dep_id10</item>-->
+        <!--<item>@string/spn_dep_id11</item>-->
+        <!--<item>@string/spn_dep_id12</item>-->
+        <!--<item>@string/spn_dep_id13</item>-->
+        <!--<item>@string/spn_dep_id14</item>-->
+        <!--<item>@string/spn_dep_id15</item>-->
+
+        <!-- <item>@string/spn_dep_id17</item>
+         <item>@string/spn_dep_id18</item>
+         <item>@string/spn_dep_id19</item>
+         <item>@string/spn_dep_id20</item>
+         <item>@string/spn_dep_id21</item>-->
+    </string-array>
+    <string name="spn_dep_id1">@string/str_bl8_d</string>
+    <string name="spn_dep_id2">@string/str_bl8_e</string>
+    <string name="spn_dep_id3">@string/str_bl8_f</string>
+    <string name="spn_dep_id4">@string/str_bl8_g</string>
+    <string name="spn_dep_id5">@string/str_bl8_h</string>
+    <string name="spn_dep_id6">@string/str_bl8_i</string>
+    <string name="spn_dep_id7">@string/str_bl8_j</string>
+    <string name="spn_dep_id8">UNICEF Pre-primary</string>
+    <string name="spn_dep_id9">UNICEF Primary</string>
+    <string name="spn_dep_id10">USAID Pre-Primary</string>
+    <string name="spn_dep_id11">USAID Primary</string>
+    <string name="spn_dep_id12">Global Partnership for Education Pre-Primary</string>
+    <string name="spn_dep_id13">Global Partnership for Education Primary</string>
+    <string name="spn_dep_id14">DFID Pre-Primary</string>
+    <string name="spn_dep_id15">DFID Primary</string>
+    <string name="spn_dep_id16">Capitation Grant </string>
+    <string name="spn_dep_id17">CG-Teaching Materials (30%)</string>
+    <string name="spn_dep_id18">CG-School Renovation (30%)</string>
+    <string name="spn_dep_id19">CG-Examination (20%)</string>
+    <string name="spn_dep_id20">CG-Administration (10%)</string>
+    <string name="spn_dep_id21">CG-Sports (10%)</string>
+    <string-array name="spn_expenditure">
+        <item>@string/spn_exp_id1</item>
+        <item>@string/spn_exp_id2</item>
+        <item>@string/spn_exp_id3</item>
+        <item>@string/spn_exp_id4</item>
+        <item>@string/spn_exp_id5</item>
+        <item>@string/spn_exp_id6</item>
+        <item>@string/spn_exp_id7</item>
+        <item>@string/spn_exp_id8</item>
+        <item>@string/spn_exp_id9</item>
+        <item>@string/spn_exp_id10</item>
+        <item>@string/spn_exp_id11</item>
+        <item>@string/spn_exp_id12</item>
+        <item>@string/spn_exp_id13</item>
+        <item>@string/spn_exp_id14</item>
+        <item>@string/spn_exp_id15</item>
+    </string-array>
+    <string name="spn_exp_id1">Salaries</string>
+    <string name="spn_exp_id2">Teaching/learning materials</string>
+    <string name="spn_exp_id3">Laboratory equipment</string>
+    <string name="spn_exp_id4">Other equipment</string>
+    <string name="spn_exp_id5">Water, Electricity and Sanitation charges</string>
+    <string name="spn_exp_id6">Transport</string>
+    <string name="spn_exp_id7">Construction</string>
+    <string name="spn_exp_id8">Study tours</string>
+    <string name="spn_exp_id9">Sports activities</string>
+    <string name="spn_exp_id10">Other expenditures</string>
+    <string name="spn_exp_id11">CG Teaching Materials (30%)</string>
+    <string name="spn_exp_id12">CG School Renovation (30%)</string>
+    <string name="spn_exp_id13">CG Examination (20%)</string>
+    <string name="spn_exp_id14">CG Administration (10%)</string>
+    <string name="spn_exp_id15">CG Sports (10%)</string>
+
+    <string name="str_bl_leyend_sc_1">Fill in this form once, and update when necessary</string>
+    <string name="str_bl_leyend_sc_2">Fill in this form once, and update when necessary</string>
+    <string name="str_bl_leyend_sc_3">Fill in this form once, and update when necessary</string>
+    <string name="str_bl_leyend_sc_4">Fill in this form once, and update when necessary</string>
+    <string name="str_bl_leyend_sc_5">Fill in this form once, and update when necessary</string>
+    <string name="str_bl_leyend_sc_6">Fill in this form once, and update when necessary</string>
+    <string name="str_bl_leyend_sc_7">Fill in this form once, and update when necessary</string>
+    <string name="str_legend_teacher1">Update this form yearly or at any time if there are changes with the staff. Remember to assign courses to the teacher in the next form.</string>
+    <string name="str_legend_student1">Update this form yearly or if necessary.</string>
+    <string name="str_leyend_student2">Update yearly if the student changes shift of does not promote the grade.</string>
+    <string name="str_leyend_behaviour">This form should be updated if there is a behavior incident in the classroom.</string>
+    <string name="str_leyend_evaluation">This form should be updated monthly, when exams are carried out.</string>
+    <string name="str_leyend_capitation_grants_1">This form must be updated monthly.</string>
+    <string name="str_leyend_attendance">"This form must be updated daily. "</string>
+    <string name="str_leyend_balance">This is your current School balance</string>
+    <string name="str_leyend_activities">This is a list of your Deposits and Expenditures.</string>
+    <string name="str_leyends_deposits">Enter all your Deposits here as they occur.</string>
+    <string name="str_leyend_expenditure">Enter all your Expenditures here as they occur.</string>
+    <string name="str_allert_no_wifi">No Wi-Fi signal</string>
+    <string name="str_allert_no_sim_card">No SIM card</string>
+    <string name="str_allert_no_internet">No internet connection available</string>
+    <string name="str_allert_record_pending_transmission">Some records have not been transmitted</string>
+    <string name="str_alerts_and_notifications">ALERTS AND NOTIFICATIONS</string>
+    <string name="str_bk_local">Backup local</string>
+    <string name="str_bk_web">Backup WEB</string>
+    <string name="report_0_student_level_report">Students report card</string>
+    <string name="loading_message">Loading ...</string>
+    <string name="report_6_primary_evaluation_by_pupil">Primary Evaluation by Student</string>
+    <string name="rpt_6_name">Name</string>
+    <string name="rpt_6_score">Score</string>
+    <string name="rpt_6_average">Average</string>
+    <string name="str_g_exam">Exam</string>
+    <string name="report_11_primary_textbooks_by_grade_and_subject">Primary Textbooks by Grade and Subject</string>
+    <string name="report_13_primary_student_with_disabilities">Student with Disabilities</string>
+    <string name="rpt_13_grade">Grade</string>
+    <string name="rpt_13_vision">Vision</string>
+    <string name="rpt_13_hearing">Hearing</string>
+    <string name="rpt_13_physical">Physical</string>
+    <string name="rpt_13_intellectual_disability">Intellectual disability</string>
+    <string name="rpt_13_total">Total</string>
+    <string name="report_10_distribution_of_use_of_resources">Distribution of Use of Resources</string>
+    <string name="rpt_10_use_of_resources">Use of resources</string>
+    <string name="rpt_10_total">Total</string>
+    <string name="rpt_10_x_axe">Total resources</string>
+    <string name="report_9_distribution_of_resources_by_source">Distribution of Resources by Source</string>
+    <string name="report_9_monthly_distribution">Monthly Deposits</string>
+    <string name="rpt_101_source">Source</string>
+    <string name="report_8_capitation_grants_by_month">General Deposit Report</string>
+    <string name="report_14_primary_repetition_by_grade">Primary Repetition by Grade</string>
+    <string name="rpt_14_grade">Grade</string>
+    <string name="rpt_14_enrolled">Enrolled</string>
+    <string name="rpt_14_new_entrant">New Entrant</string>
+    <string name="rpt_14_repeater">Repeater</string>
+    <string name="rpt_14_total">Total</string>
+    <string name="report_7_Primary_evaluation_by_Subject">Primary Evaluation by Grade, Stream and Subject</string>
+
+    <string name="report_15_primary_student_pit_latrine_ratio">Primary Student- Pit Latrine Ratio</string>
+    <string name="rpt_15_enrollment">Enrollment</string>
+    <string name="rpt_15_boys">Boys</string>
+    <string name="rpt_15_girls">Girls</string>
+    <string name="rpt_15_total">Total</string>
+    <string name="rpt_15_latrine">Latrine</string>
+    <string name="rpt_15_boys_only">Boys Only</string>
+    <string name="rpt_15_girls_only">Girls Only</string>
+    <string name="rpt_15_combined">Combined</string>
+    <string name="rpt_15_boys_pit_latrine_ratio">Boys Pit-Latrine Ratio</string>
+    <string name="rpt_15_girls_pit_latrine_ratio">Girls Pit-Latrine Ratio</string>
+    <string name="rpt_15_no_information">No Information</string>
+    <string name="rpt_15_good">Good</string>
+    <string name="rpt_15_regular">Regular</string>
+    <string name="rpt_15_bad">Bad</string>
+
+
+    <string name="str_g_primary_student_report_card">Student Report Card</string>
+
+    <string name="str_leyend_instructions">Keep an updated balance for Capitation Grants and Expenditures.</string>
+    <string name="str_using_finance">Using the Finance Module</string>
+    <string name="str_using_leyend_finance">There are four pages in the Finance module: Balance, Activity, Deposits and Expenditure. Swipe your finger across the screen to switch from one page to another.</string>
+    <string name="str_balance_leyend">
+        <![CDATA[
+        <p>Shows information for: </p>
+        <p><strong>Previous Balance:</strong> is the balance for the previous month.<br>
+        <strong>Deposits:</strong> is the total amount of grants received in the current month.<br>
+        <strong>Expenditures:</strong> is the total amount of expenses in the current month.<br>
+        <strong>Available balance:</strong> is the total deposits minus total expenditures.</p>]]>
+    </string>
+    <string name="str_activity_leyend">
+        <![CDATA[
+        <p>Shows deposits and expenditures for a period of time: </p>
+        <p><strong>INITIAL DATE:</strong> select the initial date for the activity.<br>
+        <strong>FINAL DATE:</strong> select the final date for the activity.<br>
+        <strong>Current balance:</strong> is the total deposits minus total expenditures.<br>
+        <strong>Date:</strong> is the date of the deposit or expenditure.<br>
+        <strong>Descriptions:</strong> is the description of the deposit or expenditure.<br>
+        <strong>Deposits:</strong> is the amount of the deposit.<br>
+        <strong>Expenditures:</strong> is the amount of the expenditure.</p>]]>
+    </string>
+    <string name="str_deposits_leyend">
+        <![CDATA[
+        <p>Allows you to register the grants that are received: </p>
+        <strong>DATE:</strong> select the date in which the grant was received.<br>
+        <strong>Deposit Type:</strong> select from the drop down list.<br>
+        <strong>Amount:</strong> is the total amount of the grant received.<br>
+        <strong>Observation:</strong> is description of the grant received.<br>]]>
+    </string>
+    <string name="instructionpart1">Once all fields are complete press</string>
+    <string name="instructionpart2">Once all fields are complete press</string>
+    <string name="instructionpart2d">to record the deposit.</string>
+    <string name="str_expenditures_leyend">
+        <![CDATA[
+        <p>Allows you to register all the expenses that have been incurred: </p>
+        <strong>DATE</strong> select the date in which the expense was incurred.<br>
+        <strong>Expenditure Type</strong> select from the drop down list.<br>
+        <strong>Amount</strong> is the total amount of the expense incurred.<br>
+        <strong>Observation</strong> is description of the expense incurred<br>]]>
+    </string>
+    <string name="instructionpart2e">to record the expense.</string>
+    <string name="country">US</string>
+    <string name="report_12_primary_textbooks_by_grade_and_subject">Primary Student-Textbook Ratio</string>
+    <string name="legend_linear_gauge_yellow">Not enough students</string>
+    <string name="legend_linear_gauge_green">Good</string>
+    <string name="legend_linear_gauge_red">Too many students</string>
+    <string name="txt_primary">Primary</string>
+    <string name="rpt_month">Month</string>
+    <string name="str_legend_teacher2">To add teachers or non-teaching staff press + symbol below</string>
+    <string name="str_legend_teacher3">To assign subject to the teacher press + symbol on the upper right hand corner</string>
+    <string name="str_legend_student2">To add student press + symbol below. Update yearly or when necessary.</string>
+    <string name="report_0_information">The Student report card replicates the information regarding each Student that has been entered during Student registration. The Grade and Stream can be selected, and consequently the Student from each class. It contains information regarding historical enrollment, Attendance, Evaluation and Behavior.</string>
+    <string name="report_1_information">The attendance report by Student requires the selection of the grade, stream and month. As this is selected the list of Students with percentage of attendance is displayed. This percentage is obtained by dividing the number of days attended by the days in the time period.</string>
+    <string name="report_2_information">This report presents the attendance average. Once the grade and stream are selected, three charts are presented. The first chart shows a tendency line of the primary attendance average of the entire school. The second chart shows the yearly attendance of the selected grade. The last graph shows the average attendance, as historical trend of months of the selected stream.</string>
+    <string name="report_3_information">Student-Classroom Ratio aims to show the concentration of Student per classroom. It is calculated by dividing the number of Students by the number of classrooms. This is an important issue since it is a good measure of how close to the standard the school is. The indicator is illustrated using a line graph with three color sections. The yellow section, indicating a class with too few Students. The green section indicates the ideal number of students per classroom, while the red one shows there is overcrowding in the school.</string>
+    <string name="report_4_information">This summary shows the total amount of students, and the totals per gender, as well as the total number of teachers by gender.</string>
+    <string name="report_6_information">This report allows the user to schools the grade, stream, subject and specific exam. Once the user has selected these parameters, a list of students with their individual scores appears.</string>
+    <string name="report_7_information">This report allows the user to schools the grade, stream, and subject.  Once the user has selected these parameters, two tendency line graphs appear.  The first graph shows the average in the selected subject for the entire Standard.  The second graph shows the historical average for the subject in the selected Stream.</string>
+    <string name="report_8_information">The General Deposit Report shows the sum of the deposits made for each months up to date. If a month does not appear it means that no data was recorded for the month. It also presents the sum of all deposits made and recorded for the current year. The graph below shows the monthly deposits with a tendency line.</string>
+    <string name="report_10_information">This report shows a chart of how financial resources are being used by adding all expenditures per type. It adds a bar graph with the total amount of resources used per expenditure.</string>
+    <string name="report_11_information">Primary textbooks by grade and subject allows the user to select the subject he or she wants to view.  The chart shown below expresses the number of textbook per subject selected, the number of students per standard and the student-to-textbook ratio in the last column.  </string>
+    <string name="report_13_information">This reports shows the total number of students per disability, per stadard, in the school. The intention of this report is allow the teacher to prepare the necessary services and resources a student with a particular disability requires.</string>
+    <string name="report_14_information">This report summarizes the number of repeaters by standard and the total number of students enrolled for the current year.</string>
+    <string name="str_g_close">Close</string>
+    <string name="report_information">Information</string>
+    <string name="str_report_g1">Students and Teachers</string>
+    <string name="str_report_g2">Attendance</string>
+    <string name="str_report_g3">Evaluation</string>
+    <string name="str_report_g4">Ratios</string>
+    <string name="str_report_g5">Textbooks</string>
+    <string name="str_report_g6">Resources</string>
+    <string name="str_bl7_p5">Rain tapped water</string>
+    <string name="str_gtest_13">Mid-term 2</string>
+    <string name="str_gtest_14">Terminal exam</string>
+    <string name="str_gtest_15">First Term Test</string>
+    <string name="str_gtest_16">Annual Term Exam</string>
+    <string name="str_gtest_12">Mid-term 1</string>
+    <string name="str_gtest_11">November test</string>
+    <string name="str_gtest_10">October test</string>
+    <string name="str_gtest_9">September test</string>
+    <string name="str_gtest_8">August test</string>
+    <string name="str_gtest_7">July test</string>
+    <string name="str_gtest_6">June test</string>
+    <string name="str_gtest_5">May test</string>
+    <string name="str_gtest_4">April test</string>
+    <string name="str_gtest_3">March test</string>
+    <string name="str_gtest_1">January Test</string>
+    <string name="str_gtest_2">February Test</string>
+    <string name="str_allert_no_record_pending_transmission">All records have been transmitted</string>
+    <string name="str_release_title">Release 0025</string>
+    <string name="str_teacher_attendance">Staff attendance</string>
+    <string name="str_set_attendance_date">Set attendance list</string>
+    <string name="str_attendance_list">Attendance list</string>
+    <string name="report_16_teacher_attendance">Current Year Staff Attendance Report</string>
+    <string name="report_16_information">The staff attendance report requires the selection of the month.  As this is selected the list of teachers with percentage of attendance is displayed.  This percentage is obtained by dividing the number of days attended by the days in the time period.</string>
+    <string name="str_student_attendance">Student attendance</string>
+    <string name="str_consequence_of_behavior">Consequence of behavior</string>
+    <string name="text_prepare_for_course">Initiate training mode</string>
+    <string name="txt_training">Training Module</string>
+    <string name="text_return_original">Return to original Database</string>
+    <string name="str_stage_1">Stage 1</string>
+    <string name="str_stage_2">Stage 2</string>
+    <string name="str_stage_3">Stage 3</string>
+    <string name="str_reason_teacher_attendace">If a staff is absent remember to check a reason for absence before saving.</string>
+    <string name="str_reason_student_attendance">If a student is absent remember to check a reason for absence before saving.</string>
+    <string name="str_students_registered_1">You have registered</string>
+    <string name="str_students_registered_2">out of</string>
+    <string name="str_students_registered_0">9. How many students are enrolled in this school?</string>
+    <string name="str_tables">2. Tables</string>
+    <string name="str_celphone">Cell phone</string>
+    <string name="str_internet">Internet</string>
+    <string name="str_both">Both</string>
+    <string name="str_none">None</string>
+    <string name="str_bl7_p_3_1">3.a. Does the school have a source of drinking water?</string>
+    <string name="str_bl7_p_3_3">3.c. What is the secondary source of drinking water (mark all that apply)?</string>
+    <string name="str_unselect_options">Unselect options</string>
+    <string name="report_17_title">Staff Attendance List</string>
+    <string name="report_18_title">Student Attendance List</string>
+    <string name="report_17_information">This report presents staff attendance for an entire month, day by day. It marks with a dot the days that the teacher is present, and an \"A\" for absent. Blank spaces are days where attendance was no taken. The information presented is for the current year.</string>
+    <string name="report_18_information">This report presents Student attendance for an entire month, day by day. It marks with a dot the days that the teacher is present, and an \"A\" for absent. This attendance report requires the selection of the grade, stream and month. This report presents information for the current year.</string>
+    <string name="nullStr"> </string>
+    <string name="week">Week</string>
+    <string name="week1">Week 1</string>
+    <string name="week2">Week 2</string>
+    <string name="week3">Week 3</string>
+    <string name="week4">Week 4</string>
+    <string name="week5">Week 5</string>
+    <string name="week6">Week 6</string>
+    <string name="str_teacher_drop_out">Include inactive staff</string>
+    <string name="report_5_information">This indicator shows the average number of students assigned to each teacher per level (primary and pre-primary). The graph shows a line with the average number of students per teacher for the entire school. The yellow section, indicating a class with too few Students. The green section indicates the ideal number of students per classroom, while the red one shows there is overcrowding in the school. It is important to observe that if a teacher is assigned to two grades, it is counted in both.</string>
+    <string name="report_12_information">The student-textbook ratio shows the ratio of children who share one textbook. It is calculated by dividing the number of children in the particular standard by the amount of textbooks by subject. The first number in the ratio is the number of children who share the book, the second number is alway one, indicating the one book they share. This is illustrated using a gauge that starts at 0 and goes up to 5, 0 to 2 is marked green indicating there is less than two children sharing one book. Then from 2 to 3 it is market in orange, which means 2 to 3 children are sharing one book. Beyond 3 it is colored in red, which means that more than 3 children are sharing one book.</string>
+    <string name="report_9_information">The Distribution of Resources by source report intends to show what source of funds the school relies on the most. It shows two graphs; the first is a pie graph that shows of the percentage of each source of funds. The second is a bar graph comparing the total amount of funds by source.</string>
+    <string name="report_15_information">The Primary Student- Pit Latrine Ratio report shows the total number of pit latrines and the facilities available for girls and boys, and the enrollment. It also shows the ratio which is calculated by dividing the total number of students by the amount of pit latrines. It establishes a range of what is an acceptable amount of latrines, a regular and insufficient pit latrines for the amount of students.</string>
+    <string name="str_class_calendar_by_year">Current Class Calendar</string>
+    <string name="str_calendar_month_1">January</string>
+    <string name="str_calendar_month_2">February</string>
+    <string name="str_calendar_month_3">March</string>
+    <string name="str_calendar_month_4">April</string>
+    <string name="str_calendar_month_5">May</string>
+    <string name="str_calendar_month_6">June</string>
+    <string name="str_calendar_month_7">July</string>
+    <string name="str_calendar_month_8">August</string>
+    <string name="str_calendar_month_9">September</string>
+    <string name="str_calendar_month_10">October</string>
+    <string name="str_calendar_month_11">November</string>
+    <string name="str_calendar_month_12">December</string>
+    <string name="attendance_rep_msg">Please wait for the report to finish.</string>
+    <string name="str_days">days</string>
+    <string name="str_validate_reason_absence">You must select reason</string>
+    <string name="str_continue">Continue</string>
+    <string name="str_select_the_emis_code_for_training">Select the EMIS code for training</string>
+    <string name="str_not_valid_emis_code">It is not a valid emis code</string>
+    <string name="calendar_title">Current Staff Calendar</string>
+    <string name="calendar_title_student">Current Student Calendar</string>
+    <string name="str_bl3_q_a">18. Social Studies</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="str_list_student_unassign">List student unassign</string>
+    <string name="str_attendance_axis">% of Attendance</string>
+    <string name="str_g_msj131">Automatic promotion can only take place once per school year</string>
+    <string name="str_allert_pending_automatic_promotion">Automatic promotion pending</string>
+    <string name="str_loadin_student_unassign">Loading... student unassigned</string>
+</resources>

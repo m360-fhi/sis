@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tzColorGrisMenuIcon">#4E4E4E</color>
+    <color name="tzColorGreenDark">#226100</color>
+    <color name="tzColorGreenLight">#D2EBC1</color>
+    <color name="tzColorGreyDark">#4A4A4A</color>
+    <color name="tzColorGrey">#4E4E4E</color>
+    <color name="tzColorGreyLight">#adabab</color>
+    <color name="tzColorWhite">#FFFFFF</color>
+    <color name="yellow">#FFFF66</color>
+    <color name="tzColorAzul">#00A3DD</color>
+    <color name="blackview">#000000</color>
+    <color name="lightblue">#BEE0FF</color>
+    <color name="lightgray">#D6D6D6</color>
+</resources>

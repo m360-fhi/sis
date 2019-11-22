@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/degrade_graph_header_layout">
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graph/Table title"
+                android:textColor="#F0F0F0"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+                android:id="@+id/ll_table_layout"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/graph_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="vertical"
+                    android:visibility="gone" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_table_message"
+                    android:background="#AAFFFFFF"
+                    android:textSize="23sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/table_report_no_data_to_show"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_fit_chart_big"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_fit_chart_big"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/fit_gauge_background_big"
+                    android:gravity="center_horizontal |center_vertical"
+                    android:text="34%"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp" />
+
+                <com.txusballesteros.widgets.FitChart
+                    android:id="@+id/graph_fit_chart_big"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    app:animationMode="overdraw"
+                    app:backStrokeColor="#EEEEEE"
+                    app:strokeSize="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_fit_chart_small"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_fit_chart_small"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/fit_gauge_background"
+                    android:gravity="center_horizontal |center_vertical"
+                    android:text="34%"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="40sp" />
+
+                <com.txusballesteros.widgets.FitChart
+                    android:id="@+id/graph_fit_chart_small"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    app:animationMode="overdraw"
+                    app:backStrokeColor="#EEEEEE"
+                    app:strokeSize="10dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_line_chart"
+                android:background="@drawable/degrade_graph_layout"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/graph_line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

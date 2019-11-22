@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout  style="@style/foms_bar">
+
+            <LinearLayout style="@style/layout_foms_text">
+                <TextView
+                    style="@style/title_forms"
+                    android:id="@+id/tv_groupIndicator"
+                    android:text="@string/str_s_tv1" />
+            </LinearLayout>
+
+
+
+            <LinearLayout style="@style/layout_btn_save">
+                <View
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight=".12"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_gravity="center_vertical"
+
+                    android:src="@drawable/save2"
+                    app:backgroundTint="#a0a0a0" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/fl_part1"
+            android:layout_weight=".345">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="13dp">
+
+                <!--************* PART 1 ************-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".345"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_s_tv11"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:singleLine="false"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="15dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/et_emis"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight=".5"
+                            android:background="@drawable/util_spinner"
+                            android:elevation="1dp"
+                            android:inputType="phone"
+                            android:singleLine="false"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_s_tv12"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:singleLine="false"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="25dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1" >
+
+                        <EditText
+                            android:id="@+id/et_school_name"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/util_spinner"
+                            android:inputType="textCapSentences"
+                            android:singleLine="false"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#72a0b5"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_s_tv13"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:singleLine="false"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <!-- Morning -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_s_tv14"
+
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="50dp" />
+
+                    <RadioGroup
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingStart="50dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pp"
+                            android:id="@+id/_col1"
+                            android:textSize="25dp"
+                            android:textColor="#000000" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p"
+                            android:id="@+id/_col2"
+                            android:textSize="25dp"
+                            android:textColor="#000000" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/s"
+                            android:id="@+id/_col3"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RadioGroup>
+
+                    <!-- Afternoon -->
+                    <View
+                        android:layout_height="20dp"
+                        android:layout_width="match_parent"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_s_tv15"
+
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="50dp" />
+
+                    <RadioGroup
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingStart="50dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pp"
+                            android:id="@+id/_col4"
+                            android:textSize="25dp"
+                            android:textColor="#000000" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p"
+                            android:id="@+id/_col5"
+                            android:textSize="25dp"
+                            android:textColor="#000000" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/s"
+                            android:id="@+id/_col6"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RadioGroup>
+
+                    <!-- Evening -->
+                    <View
+                        android:layout_height="20dp"
+                        android:layout_width="match_parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_s_tv16"
+
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="50dp"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingStart="50dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pp"
+                            android:id="@+id/_col7"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p"
+                            android:id="@+id/_col8"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/s"
+                            android:id="@+id/_col9"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </FrameLayout>
+
+        // ****************** BUTTON SAVE ******************
+
+    </LinearLayout>
+</LinearLayout>

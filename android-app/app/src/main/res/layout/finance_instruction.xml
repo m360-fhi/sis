@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/foms_bar">
+
+        <LinearLayout style="@style/layout_foms_text"
+            android:layout_weight="6">
+            <TextView
+                style="@style/title_forms"
+                android:gravity="center"
+                android:id="@+id/tv_groupIndicator"
+                android:text="@string/str_m_tv10" />
+            <TextView
+                style="@style/leyend_forms"
+                android:paddingLeft="3dp"
+                android:text="@string/str_leyend_instructions" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".345"
+        android:padding="16dp"
+        android:transitionGroup="false"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".345"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_forms"
+                        android:gravity="center"
+                        android:text="@string/str_using_finance" />
+
+                    <TextView
+                        style="@style/leyend_forms"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="3dp"
+                        android:text="@string/str_using_leyend_finance" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblue"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/target_title_forms"
+                            android:text="@string/finance_deposits" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_deposits_leyend"
+                            style="@style/target_leyend_forms" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/target_isntructions_form"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/instructionpart1" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/save2"
+                                app:backgroundTint="@color/tzColorGreyDark" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/target_isntructions_form"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:text="@string/instructionpart2d" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblue"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/target_title_forms"
+                            android:text="@string/finance_expenditure" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_expenditures_leyend"
+                            style="@style/target_leyend_forms" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/target_isntructions_form"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/instructionpart2" />
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/save2"
+                                app:backgroundTint="@color/tzColorGreyDark" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/target_isntructions_form"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:text="@string/instructionpart2e" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblue"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/target_title_forms"
+                            android:text="@string/finance_activity" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/txt_activity_leyend"
+                            style="@style/target_leyend_forms" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblue"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/target_title_forms"
+                            android:text="@string/finance_home" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgray"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/txt_balance_leyend"
+                            style="@style/target_leyend_forms" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

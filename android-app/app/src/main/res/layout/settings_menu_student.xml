@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout style="@style/foms_bar">
+            <LinearLayout style="@style/layout_foms_text" android:gravity="center_horizontal">
+                <TextView
+                    style="@style/title_forms"
+                    android:id="@+id/tv_groupIndicator"
+                    android:text="@string/str_g_students" />
+
+                <TextView
+                    style="@style/leyend_forms"
+                    android:text="@string/str_legend_student2" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--************* PART 1 ************-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/fl_part1"
+            android:layout_weight=".475"
+            android:transitionGroup="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="125dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="5">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_g_shift"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp"
+                            android:layout_marginTop="5dp" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:id="@+id/sp_shift"
+                            android:background="@drawable/util_spinner"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="5">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_g_level"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp"
+                            android:layout_marginTop="5dp" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_level"
+                            android:layout_weight="3"
+                            android:background="@drawable/util_spinner"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="5">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_g_grade"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp"
+                            android:layout_marginTop="5dp" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_grade"
+                            android:layout_weight="3"
+                            android:background="@drawable/util_spinner"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="5">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/str_g_stream"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#4b4b4b"
+                            android:textSize="25dp"
+                            android:layout_marginTop="5dp" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_section"
+                            android:layout_weight="3"
+                            android:background="@drawable/util_spinner"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_no_data_to_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/table_report_no_data_to_show"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/fontSelect"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="25dp">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lv_list" />
+
+                    <!-- 1. EMIS CODE-->
+
+                    <!-- 2. NAME-->
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/fl_part2"
+            android:layout_weight=".475"
+            android:transitionGroup="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/title_forms"
+                        android:text="@string/str_g_close"
+                        android:id="@+id/btn_close_unassign"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        style="@style/title_forms"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/str_list_student_unassign" />
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_unassign" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--************* PART 2 ************-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:paddingBottom="7dp"
+            android:background="@drawable/save_line2">
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:id="@+id/cv1_enrollment" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/sendEnrollment"
+                android:layout_width="@dimen/fab_margin2"
+                android:layout_height="@dimen/fab_margin2"
+                android:layout_gravity="bottom|end"
+
+                android:src="@drawable/transmit"
+                app:backgroundTint="#a0a0a0" />
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3.2"
+                android:id="@+id/cv2_enrollment" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_gravity="bottom"
+                android:textSize="30dp"
+                android:visibility="gone"
+                android:id="@+id/et_find_reg"
+                android:background="#a0a0a0"
+                android:textIsSelectable="false" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_find_reg"
+                android:src="@drawable/ic_media_play"
+                android:layout_gravity="bottom"
+                android:visibility="gone" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/find_reg"
+                android:layout_width="@dimen/fab_margin2"
+                android:layout_height="@dimen/fab_margin2"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/find"
+                app:backgroundTint="#a0a0a0" />
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".2"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_reg"
+                android:layout_width="@dimen/fab_margin2"
+                android:layout_height="@dimen/fab_margin2"
+                android:layout_gravity="bottom|end"
+
+                android:src="@drawable/add"
+                app:backgroundTint="#a0a0a0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

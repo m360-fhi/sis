@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/collect360">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/bandera"
+            android:layout_gravity="right"
+            android:paddingTop="6dp"
+            android:paddingBottom="15dp" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tv_groupIndicator"
+            android:textColor="#ff080808"
+            android:textSize="24dp"
+            android:text="Primary Curriculum and Instruction"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp" />
+
+
+        <!--************* PART 1 ************-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/fl_part1"
+            android:layout_weight=".28"
+            android:transitionGroup="false">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".345"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary"
+                    android:id="@+id/tv_hint"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:paddingBottom="10dp" />
+
+                <!-- 1. GEOGRAFIA -->
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Region "
+                    android:id="@+id/textView4"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="80dp" />
+                <Spinner
+                    android:id="@+id/sp_g1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/util_spinner"
+                    android:minHeight="@dimen/fontTitle" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Region "
+                    android:id="@+id/textView43"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="80dp" />
+                <Spinner
+                    android:id="@+id/sp_g2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/util_spinner"
+                    android:minHeight="@dimen/fontTitle" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Region "
+                    android:id="@+id/textView433"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="80dp" />
+                <Spinner
+                    android:id="@+id/sp_g3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/util_spinner"
+                    android:minHeight="@dimen/fontTitle" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lv_prueba"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!--************* PART 2 ************-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/fl_part2"
+            android:layout_weight=".28">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".345"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clasrooms furniture totals"
+                    android:id="@+id/tv_hint1"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:paddingBottom="10dp" />
+                <!-- 1. EMIS CODE-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.  Chairs"
+                    android:id="@+id/textView21"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/et_col7"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp" />
+
+                <!-- 2. NAME-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. Desks single seater"
+                    android:id="@+id/textView22"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col8"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9. Desks 2 seater"
+                    android:id="@+id/textView92"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col9"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10. Desks 3 seater"
+                    android:id="@+id/textView102"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col10"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11. Benches single seater"
+                    android:id="@+id/textView112"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col11"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12. Benches 2 seater"
+                    android:id="@+id/textView122"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col12"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13. Benches 3 seater"
+                    android:id="@+id/textView13"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:phoneNumber="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col13"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14. Chalkboard"
+                    android:id="@+id/textView14"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/et_col14"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".6"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_back"
+                android:src="@drawable/prev"
+                android:background="#00faf4f4"
+                android:layout_gravity="center_vertical" />
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_next"
+                android:src="@drawable/next"
+                android:background="#00faf4f4"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:focusable="false" />
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:src="@drawable/save"
+                android:background="#00faf4f4"
+                android:layout_gravity="center_vertical" />
+
+            <View
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_exit"
+                android:src="@drawable/exit"
+                android:background="#00faf4f4"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Android="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout style="@style/foms_bar">
+            <LinearLayout style="@style/layout_foms_text">
+                <TextView
+                    style="@style/title_forms"
+                    android:id="@+id/tv_groupIndicator"
+                    android:text="@string/str_teacher_attendance" />
+                <TextView
+                    style="@style/leyend_forms"
+                    android:paddingLeft="3dp"
+                    android:text="@string/str_leyend_attendance" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_btn_save">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/save_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/save2"
+                    app:backgroundTint="@color/tzColorGreenDark" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--************* PART 1 ************-->
+
+        <!--************* PART 2 ************-->
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/fl_part2">
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+
+                    <!-- 2. NAME-->
+
+                <LinearLayout
+                    android:id="@+id/ll_set_date_attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/str_set_attendance_date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <DatePicker
+                        android:id="@+id/dp_atteandance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_set_date_attendance"
+                        android:layout_margin="25dp"
+                        android:text="@string/str_g_confirm"/>
+                </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_attendance_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/ll_head_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="30dp"
+                                android:text="@string/str_attendance_list"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#000000"
+                                android:textSize="25dp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/str_reason_teacher_attendace"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:textColor="#4b4b4b"
+                                android:textSize="22dp"
+                                android:layout_marginTop="10dp" />
+
+                            <TextView
+                                android:id="@+id/textView88"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center|right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight=".25"
+                                android:background="#858585"
+                                android:gravity="bottom"
+                                android:textColor="#aaaaaa"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight=".6"
+                                    android:text="@string/str_g_teacher"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#4b4b4b"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight=".2"
+                                    android:text="@string/str_g_present"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#4b4b4b"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight=".2"
+                                    android:text="@string/str_sa_h"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#4b4b4b"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight=".25"
+                                android:background="#858585"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#aaaaaa"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:id="@+id/sv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <ListView
+                                    android:id="@+id/lv_attendance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:choiceMode="none"
+                                    android:paddingTop="10dp" />
+                            </LinearLayout>
+
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/date_record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#aaaaaa"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

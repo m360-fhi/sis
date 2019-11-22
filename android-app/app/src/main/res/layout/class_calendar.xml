@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:id="@+id/lyt_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tzColorGreyDark"
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold"
+            android:text="@string/str_class_calendar_by_year"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@color/tzColorAzul"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="75dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_10" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_11" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:text="@string/str_calendar_month_12" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="75dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_10" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tzColorGreyLight"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_11" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_leyend_size"
+                android:id="@+id/tv_daysMontly_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bn_confirm_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tzColorGreyLight"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_title_size"
+            android:text="@string/str_g_confirm" />
+    </LinearLayout>
+</LinearLayout>

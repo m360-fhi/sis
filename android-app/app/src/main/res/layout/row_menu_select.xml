@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:autoText="false"
+    android:background="@drawable/button_select_collect"
+    android:paddingLeft="30dp"
+    android:paddingTop="15dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="15dp"
+    android:password="false"
+    android:text="Texto de prueba"
+    android:textColor="#F2F2F2"
+    android:textSize="@dimen/fontSelect"
+    android:typeface="sans"></TextView>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/foms_bar">
+
+        <LinearLayout style="@style/layout_foms_text"
+            android:layout_weight="6">
+            <TextView
+                style="@style/title_forms"
+                android:gravity="center"
+                android:id="@+id/tv_groupIndicator"
+                android:text="@string/finance_expenditure" />
+            <TextView
+                style="@style/leyend_forms"
+                android:paddingLeft="3dp"
+                android:text="@string/str_leyend_expenditure" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/layout_btn_save"
+            android:layout_weight="1">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:src="@drawable/save2"
+                app:backgroundTint="@color/tzColorGreyDark"
+                app:borderWidth="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/fl_part1"
+        android:layout_weight=".345"
+        android:padding="16dp"
+        android:transitionGroup="false">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".345"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textAllCaps="true"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/finance_initial_date"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_initial_date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="24dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:paddingBottom="10dp"
+                        android:textStyle="bold"
+                        />
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_initial_date"
+                        android:text="@string/finance_select_date"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finance_expenditure_type"
+
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:hint="Tick one answer"
+                    android:paddingBottom="20dp"
+                    android:layout_weight=".40" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/spn_deposit"
+                    android:background="@drawable/util_spinner"
+                    android:textSize="24dp"
+                    android:entries="@array/spn_expenditure"
+                    android:layout_weight=".60"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finance_amount"
+
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:hint="Tick one answer"
+                    android:paddingBottom="20dp"
+                    android:layout_weight=".60" />
+
+              <!--  <com.blackcat.currencyedittext.CurrencyEditText
+                    app:allow_negative_values="true"
+                    app:decimal_digits="2"
+                    android:selectAllOnFocus="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/finance_amount"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:paddingTop="10dp"
+                    android:layout_weight=".40"
+                    android:gravity="right"
+                    />-->
+
+                <com.example.sergio.sistz.util.MoneyEditText
+                    android:selectAllOnFocus="true"
+                    android:id="@+id/money_edittext"
+                    android:ems="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:paddingTop="10dp"
+                    android:layout_weight=".40"
+                    android:gravity="right"
+                    app:numdecimal="2"
+                    app:symbolshow="true"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finance_observation"
+
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+
+                    android:hint="Tick one answer"
+                     />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/finance_observation"
+                    android:singleLine="false"
+                    android:background="@drawable/get_collect"
+                    android:textSize="24dp"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tzColorGrey">
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:text="@string/finance_date"/>
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="@string/finance_description"/>
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:layout_width="0dp"
+                        android:textAlignment="center"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:text="@string/finance_amount"/>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_activities"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="vertical"></ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+</LinearLayout>
